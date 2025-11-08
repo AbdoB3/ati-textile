@@ -16,7 +16,7 @@ function Feature() {
           </div>
           <div className="flex gap-4 pl-0 lg:pl-20 flex-col  flex-1">
             <div>
-              <Badge>Catalogue</Badge>
+              <Badge>A propos</Badge>
             </div>
             <div className="flex gap-2 flex-col">
               <h2 className="text-xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">

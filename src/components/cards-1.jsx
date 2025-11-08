@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const ProductCard = (
   ({ className, imageUrl, title, category, href, onSave, ...props }, ref) => {
@@ -11,7 +12,7 @@ const ProductCard = (
           className
         )}
         {...props}>
-        <a href={href} aria-label={title}>
+        <Link href={href} aria-label={title}>
           {/* Image container with aspect ratio */}
           <div className="aspect-square overflow-hidden">
             <img
@@ -24,7 +25,7 @@ const ProductCard = (
             <h3 className="font-semibold leading-tight truncate">{title}</h3>
             <p className="mt-1 text-sm text-muted-foreground">{category}</p>
           </div>
-        </a>
+        </Link>
         {/* Save button - appears on hover */}
         {/* <Button
           variant="secondary"

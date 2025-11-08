@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Product from "@/components/Products/products";
+import Product from "@/app/product/products";
 import { productsData } from "@/lib/products-data";
-
+import Image from "next/image";
 export default async function CategoryPage({ params }) {
   const categoryData = {
     "matiere-chaussure": {
@@ -9,18 +9,27 @@ export default async function CategoryPage({ params }) {
       description:
         "Des matériaux fiables pour une fabrication robuste et durable",
       backgroundImage: "/chaussure.png",
+      titleImage: "this is the image title",
+      heading1: "this is the heading1 title",
+      heading2: "this is the heading2 title",
     },
     ameublement: {
       title: "Textile d'Ameublement",
       description:
         "Des tissus élégants et résistants pour l’intérieur et l’extérieur",
       backgroundImage: "/ameublement.png",
+      titleImage: "this is the image title",
+      heading1: "this is the heading1 title",
+      heading2: "this is the heading2 title",
     },
     "tissus-automobiles": {
       title: "Tissus Automobiles",
       description:
         "Solutions textiles adaptées aux normes du secteur automobile",
       backgroundImage: "/automobile.png",
+      titleImage: "this is the image title",
+      heading1: "this is the heading1 title",
+      heading2: "this is the heading2 title",
     },
   };
 
@@ -67,7 +76,41 @@ export default async function CategoryPage({ params }) {
 
       {/* Content */}
       <div className="w-full bg-background p-4 sm:p-6 md:p-8">
-        <Product products={productsData[resolvedParams.id]}/>
+        {/* Feature with img */}
+        <div className="mx-10 md:mx-20">
+          <div className="w-full py-20 lg:py-40">
+            <div className="container mx-auto">
+                <h2 className="text-3xl font-bold mb-8 text-start">
+                    Découvrez Nos Solutions Textiles pour {category.titleImage}
+                  </h2>
+              <div className="flex flex-col-reverse lg:flex-row gap-10 lg:items-center">
+                <div className="bg-muted rounded-md w-full aspect-video h-full flex-1 relative">
+                  
+                  <Image
+                    src={category.backgroundImage}
+                    alt="Feature Image"
+                    fill
+                    className="object-cover rounded-md"
+                  />
+                </div>
+                <div className="flex gap-4 pl-0 lg:pl-20 flex-col  flex-1">
+                  <div className="flex gap-2 flex-col">
+                    <h2 className="text-xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+                      {category.heading1}
+                    </h2>
+                    <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
+                      {category.heading2}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* product */}
+        <div>
+          <Product products={productsData[resolvedParams.id]} />
+        </div>
       </div>
     </main>
   );
