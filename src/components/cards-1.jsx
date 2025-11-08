@@ -1,6 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Bookmark } from "lucide-react";
 
 const ProductCard = (
   ({ className, imageUrl, title, category, href, onSave, ...props }, ref) => {
