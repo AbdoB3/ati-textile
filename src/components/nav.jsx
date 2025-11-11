@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link"; 
+import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -15,24 +15,24 @@ import {
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-  { href: "#", label: "Home", active: true },
+  { href: "/", label: "Home", active: true },
   { href: "#", label: "Produits" },
-  { href: "#", label: "About" },
+  { href: "#about", label: "About" },
   { href: "#", label: "Contact" },
 ];
 
 export default function Nav() {
   return (
     // <header className="bg-transparent px-4 md:px-6 absolute w-full z-50"></header>
-    <header className="border-b border-b-slate-200 px-4 md:px-6 w-full absolute z-50">
-      <div className="flex h-16 items-center justify-between gap-4">
+    <header className="border-b bg-[#262856] border-b-slate-200 px-4 md:px-6 w-full absolute z-50">
+      <div className="flex h-20 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu trigger */}
           <Popover>
             <PopoverTrigger asChild>
               <Button
-                className="group size-8 md:hidden"
+                className="group size-8 lg:hidden text-white hover:text-[#262856] hover:bg-white/90 transition-colors duration-300"
                 variant="ghost"
                 size="icon"
               >
@@ -63,7 +63,7 @@ export default function Nav() {
                 </svg>
               </Button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-36 p-1 md:hidden">
+            <PopoverContent align="start" className="w-36 p-1 lg:hidden">
               <NavigationMenu className="max-w-none *:w-full">
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                   {navigationLinks.map((link, index) => (
@@ -84,14 +84,14 @@ export default function Nav() {
           {/* Logo nav */}
           <div className="flex items-center gap-6">
             <Link href="/" className="text-primary hover:text-primary/90">
-              <Image src="/logo.png" alt="Logo" width={150} height={50} />
+              <Image src="/logo.png" alt="Logo" width={170} height={50} />
             </Link>
           </div>
         </div>
         {/* Main nav */}
         <div className="flex items-center gap-10">
           {/* Navigation menu */}
-          <NavigationMenu className="max-md:hidden">
+          <NavigationMenu className="max-lg:hidden">
             <NavigationMenuList className="gap-6">
               {navigationLinks.map((link, index) => (
                 <NavigationMenuItem key={index}>

@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { use,useState } from "react";
 import { productDetailsData } from "@/lib/products-data";
 import { ChevronDown } from "lucide-react";
 
 export default function ProductDetailPage({ params }) {
-  const resolvedParams = params;
+  const resolvedParams = use(params);
   const product = productDetailsData[resolvedParams.id];
   const [openSections, setOpenSections] = useState({
     applications: true,

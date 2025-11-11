@@ -2,36 +2,43 @@ import Link from "next/link";
 import Product from "@/app/product/products";
 import { productsData } from "@/lib/products-data";
 import Image from "next/image";
+import DestinationCardDemo from "@/components/featureImg";
 export default async function CategoryPage({ params }) {
   const categoryData = {
-    "matiere-chaussure": {
-      title: "Matières pour Chaussure",
-      description:
-        "Des matériaux fiables pour une fabrication robuste et durable",
-      backgroundImage: "/chaussure.png",
-      titleImage: "this is the image title",
-      heading1: "this is the heading1 title",
-      heading2: "this is the heading2 title",
-    },
-    ameublement: {
-      title: "Textile d'Ameublement",
-      description:
-        "Des tissus élégants et résistants pour l’intérieur et l’extérieur",
-      backgroundImage: "/ameublement.png",
-      titleImage: "this is the image title",
-      heading1: "this is the heading1 title",
-      heading2: "this is the heading2 title",
-    },
-    "tissus-automobiles": {
-      title: "Tissus Automobiles",
-      description:
-        "Solutions textiles adaptées aux normes du secteur automobile",
-      backgroundImage: "/automobile.png",
-      titleImage: "this is the image title",
-      heading1: "this is the heading1 title",
-      heading2: "this is the heading2 title",
-    },
-  };
+  "matiere-chaussure": {
+    title: "Matières pour Chaussure",
+    description:
+      "Des matériaux fiables pour une fabrication robuste et durable",
+    backgroundImage: "/chaussure.png",
+
+    heading1: "Composants techniques pour la fabrication de chaussures",
+    heading2:
+      "Nous fournissons EVA, plaques, colles et matières premières assurant résistance, confort et tenue dans le temps.",
+  },
+
+  ameublement: {
+    title: "Textile d'Ameublement",
+    description:
+      "Des tissus élégants et résistants pour l’intérieur et l’extérieur",
+    backgroundImage: "/ameublement.png",
+
+    heading1: "Tissus décoratifs pour espaces résidentiels et professionnels",
+    heading2:
+      "Velours, toiles, similicuir et textiles outdoor conçus pour offrir esthétique, confort et durabilité au quotidien.",
+  },
+
+  "tissus-automobiles": {
+    title: "Tissus Automobiles",
+    description:
+      "Solutions textiles techniques conformes aux exigences de l’industrie automobile.",
+    backgroundImage: "/automobile.png",
+
+    heading1: "Confort, résistance et finition premium",
+    heading2:
+      "Nos tissus offrent une excellente résistance, un entretien simplifié et une durabilité éprouvée pour les intérieurs automobiles.",
+  },
+};
+
 
   const resolvedParams = await params;
   const category = categoryData[resolvedParams.id];
@@ -40,9 +47,9 @@ export default async function CategoryPage({ params }) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Category not found</h1>
+          <h1 className="text-4xl font-bold mb-4">Catégorie introuvable</h1>
           <Link href="/" className="text-blue-600 hover:underline">
-            Back to home
+            Retour à l'accueil
           </Link>
         </div>
       </div>
@@ -50,15 +57,15 @@ export default async function CategoryPage({ params }) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <main className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
       {/* Header with Background Image */}
       <div
-        className="relative bg-cover bg-center border-b border-gray-200"
+        className="relative bg-cover bg-center border-b border-gray-200      "
         style={{
           backgroundImage: `url('${category.backgroundImage}')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-[#262856]/40"></div>
 
         <div className="relative max-w-4xl mx-auto px-4 py-20">
           <Link
@@ -76,29 +83,28 @@ export default async function CategoryPage({ params }) {
 
       {/* Content */}
       <div className="w-full bg-background p-4 sm:p-6 md:p-8">
+        
         {/* Feature with img */}
         <div className="mx-10 md:mx-20">
-          <div className="w-full py-20 lg:py-40">
+          <div className="w-full py-20 lg:py-10">
             <div className="container mx-auto">
-                <h2 className="text-3xl font-bold mb-8 text-start">
-                    Découvrez Nos Solutions Textiles pour {category.titleImage}
-                  </h2>
-              <div className="flex flex-col-reverse lg:flex-row gap-10 lg:items-center">
-                <div className="bg-muted rounded-md w-full aspect-video h-full flex-1 relative">
-                  
-                  <Image
-                    src={category.backgroundImage}
-                    alt="Feature Image"
-                    fill
-                    className="object-cover rounded-md"
+              
+              <div className="flex flex-col-reverse lg:flex-row gap-10 items-start">
+                
+                <div className="bg-muted hidden lg:block rounded-md w-8 h-full flex-1 relative">
+                  <DestinationCardDemo 
+                  src={category.backgroundImage}
+                  alt={category.title}
+                  fill
+                  className="object-cover rounded-md"
                   />
                 </div>
-                <div className="flex gap-4 pl-0 lg:pl-20 flex-col  flex-1">
+                <div className="flex gap-4 pl-0 lg:pl-20 flex-col flex-1 py-10">
                   <div className="flex gap-2 flex-col">
-                    <h2 className="text-xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+                    <h2 className="text-2xl lg:mb-8 md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
                       {category.heading1}
                     </h2>
-                    <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
+                    <p className="text-xl max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
                       {category.heading2}
                     </p>
                   </div>
