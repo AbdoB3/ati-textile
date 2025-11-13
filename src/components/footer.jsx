@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Logo & Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo.png" alt="Logo" width={150} height={50} />
+              <Image src="/logo.png" alt="Logo" width={180} height={50} />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
               L’import-export et la distribution de matières textiles, tissus

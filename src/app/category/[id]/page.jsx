@@ -67,14 +67,14 @@ export default async function CategoryPage({ params }) {
       >
         <div className="absolute inset-0 bg-[#262856]/40"></div>
 
-        <div className="relative max-w-4xl mx-auto px-4 py-20">
+        <div className="relative max-w-4xl mx-auto px-4 py-28">
           <Link
             href="/"
             className="text-white hover:text-gray-200 mb-4 inline-block text-sm transition-colors"
           >
             ← Back to Home
           </Link>
-          <h1 className="text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-xl font-bold text-white mb-4">
             {category.title}
           </h1>
           <p className="text-xl text-gray-100">{category.description}</p>
@@ -82,11 +82,11 @@ export default async function CategoryPage({ params }) {
       </div>
 
       {/* Content */}
-      <div className="w-full bg-background p-4 sm:p-6 md:p-8">
+      <div className="w-full bg-background sm:p-4 md:p-6">
         
         {/* Feature with img */}
-        <div className="mx-10 md:mx-20">
-          <div className="w-full py-20 lg:py-10">
+        <div className="mx-5 md:mx-20">
+          <div className="w-full py-10 ">
             <div className="container mx-auto">
               
               <div className="flex flex-col-reverse lg:flex-row gap-10 items-start">
@@ -101,10 +101,10 @@ export default async function CategoryPage({ params }) {
                 </div>
                 <div className="flex gap-4 pl-0 lg:pl-20 flex-col flex-1 py-10">
                   <div className="flex gap-2 flex-col">
-                    <h2 className="text-2xl lg:mb-8 md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+                    <h2 className="text-3xl lg:mb-4 md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
                       {category.heading1}
                     </h2>
-                    <p className="text-xl max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
+                    <p className="text-xl max-w-5xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
                       {category.heading2}
                     </p>
                   </div>
@@ -114,7 +114,7 @@ export default async function CategoryPage({ params }) {
           </div>
         </div>
         {/* product */}
-        <div>
+        <div className="p-4">
           <Product products={productsData[resolvedParams.id]} />
         </div>
       </div>

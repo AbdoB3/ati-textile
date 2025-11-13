@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { use,useState } from "react";
-import { productDetailsData } from "@/lib/products-data";
-import { ChevronDown } from "lucide-react";
+import Link from "next/link"
+import { use,useState } from "react"
+import { productDetailsData } from "@/lib/products-data"
+import { ChevronDown } from "lucide-react"
 
 export default function ProductDetailPage({ params }) {
   const resolvedParams = use(params);
@@ -38,8 +38,8 @@ export default function ProductDetailPage({ params }) {
       {/* Header Navigation */}
 
       {/* Product Detail */}
-      <div className="max-w-6xl mx-auto px-4 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="max-w-6xl mx-auto px-4 py-30 lg:pt-40">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Product Image */}
           <div className="bg-white rounded-lg overflow-hidden shadow-sm">
             <img
