@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -15,13 +17,16 @@ import {
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-  { href: "/", label: "Home", active: true },
-  { href: "#", label: "Produits" },
-  { href: "#about", label: "About" },
-  { href: "#", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/category/matiere-chaussure", label: "Chaussure" },
+  { href: "/category/ameublement", label: "Ameublement" },
+  { href: "/category/tissus-automobiles", label: "Automobiles" },
+  { href: "/category/autres-textiles", label: "Textiles" },
 ];
 
 export default function Nav() {
+  const pathname = usePathname();
+
   return (
     // <header className="bg-transparent px-4 md:px-6 absolute w-full z-50"></header>
     <header className="border-b bg-[#262856] border-b-slate-200 px-4 md:px-6 w-full absolute z-50">
@@ -69,11 +74,12 @@ export default function Nav() {
                   {navigationLinks.map((link, index) => (
                     <NavigationMenuItem key={index} className="w-full">
                       <NavigationMenuLink
-                        href={link.href}
-                        className="py-1.5"
-                        active={link.active}
+                        asChild
+                        active={pathname === link.href}
                       >
-                        {link.label}
+                        <Link href={link.href} className="py-1.5 block">
+                          {link.label}
+                        </Link>
                       </NavigationMenuLink>
                     </NavigationMenuItem>
                   ))}
@@ -84,8 +90,12 @@ export default function Nav() {
           {/* Logo nav */}
           <div className="flex items-center gap-6">
             <Link href="/" className="text-primary hover:text-primary/90">
-              <Image src="/logo2.png" alt="Logo" width={100} height={50} 
-              style={{ width: '130px', height: '60px' }}
+              <Image
+                src="/logo2.png"
+                alt="Logo"
+                width={100}
+                height={50}
+                style={{ width: "130px", height: "60px" }}
               />
             </Link>
           </div>
@@ -97,12 +107,13 @@ export default function Nav() {
             <NavigationMenuList className="gap-6">
               {navigationLinks.map((link, index) => (
                 <NavigationMenuItem key={index}>
-                  <NavigationMenuLink
-                    active={link.active}
-                    href={link.href}
-                    className="py-1.5 font-medium text-slate-100 hover:text-primary"
-                  >
-                    {link.label}
+                  <NavigationMenuLink asChild active={pathname === link.href}>
+                    <Link
+                      href={link.href}
+                      className="py-1.5 font-medium text-slate-100 hover:text-primary"
+                    >
+                      {link.label}
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
@@ -112,11 +123,8 @@ export default function Nav() {
 
         {/* Right side */}
         <div className="flex items-center gap-10">
-          {/* <Button asChild variant="ghost" size="sm" className="text-sm">
-            <a href="#">Sign In</a>
-          </Button> */}
-          <Button asChild  className="text-sm ">
-            <a href="#">NOS PROMOS !!🔥​</a>
+          <Button asChild className="text-sm">
+            <Link href="#">NOS PROMOS !!🔥​</Link>
           </Button>
         </div>
       </div>
