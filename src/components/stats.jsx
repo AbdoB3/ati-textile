@@ -1,26 +1,57 @@
-import { NumberTicker } from "@/components/ui/number-ticker";
+export default function ExpertiseSection() {
+  const expertiseItems = [
+    {
+      title: "Expertise Approfondie",
+      description:
+        "Des années d'expérience dédiées à l'innovation et à la maîtrise des matériaux textiles.",
+    },
+    {
+      title: "Qualité Contrôlée",
+      description:
+        "Des processus rigoureux pour garantir des tissus fiables, durables et adaptés aux exigences professionnelles.",
+    },
+    {
+      title: "Fiabilité & Engagement",
+      description:
+        "Une sélection méticuleuse de matières et un accompagnement continu pour assurer l'excellence de vos projets.",
+    },
+  ];
 
-export default function StatsSection() {
-    return (
-        <section>
-            <div className="pb-24">
-                <div className="mx-auto max-w-5xl px-6">
-                    <h2 className="sr-only">Tailark in stats</h2>
-                    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                        <div className="space-y-0.5 md:text-center">
-                            <div className="text-primary text-4xl font-bold"><NumberTicker value={15} />+</div>
-                            <p className="text-muted-foreground">Ans dans l’industrie textile</p>
-                        </div>
-                        <div className="space-y-0.5 md:text-center">
-                            <div className="text-primary text-4xl font-bold"> <NumberTicker value={1900} />+</div>
-                            <p className="text-muted-foreground">Références matières & tissus</p>
-                        </div>
-                        <div className="col-span-2 border-t pt-4 md:border-l md:border-t-0 md:pl-12 md:pt-0">
-                            <p className="text-muted-foreground text-balance text-lg">Votre partenaire textile de référence pour projets industriels et production professionnelle.</p>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <section className="py-24 px-4 bg-white relative overflow-hidden">
+      {/* Subtle background accent image on right */}
+      <div
+        className="absolute hidden md:block right-0 top-0 w-1/3 h-full opacity-5 rounded-xl pointer-events-none"
+        style={{
+          backgroundImage: "url('/africaHero.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "right",
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 relative">
+          {/* Vertical separators for desktop */}
+          <div className="hidden md:block absolute left-1/3 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+          <div className="hidden md:block absolute left-2/3 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+
+          {expertiseItems.map((item, index) => (
+            <div key={index} className="flex flex-col relative">
+              {/* Horizontal separator for mobile (above each item except first) */}
+              {index > 0 && (
+                <div className="md:hidden absolute -top-6 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+              )}
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight">
+                {item.title}
+              </h3>
+              <p className="text-base text-gray-600 leading-relaxed font-light">
+                {item.description}
+              </p>
             </div>
-        </section>
-    )
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

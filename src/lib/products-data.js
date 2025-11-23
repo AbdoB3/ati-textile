@@ -17,8 +17,7 @@ export const productsData = {
     {
       title: "Semelles Injectées & EVA",
       category: "Composants",
-      imageUrl:
-        "https://m.media-amazon.com/images/I/71wzrPcgi4L.jpg",
+      imageUrl: "https://m.media-amazon.com/images/I/71wzrPcgi4L.jpg",
       href: "/product/semelles-eva",
     },
     {
@@ -157,7 +156,11 @@ export const productDetailsData = {
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8CL87tqBMRRe5ti1Q5Daqo1sXk7AUBbJRg&s",
     description:
       "Colles et consommables nécessaires à l’assemblage précis et durable de chaussures.",
-    applications: ["Assemblage Semelle/Tige", "Réparations", "Montage industriel"],
+    applications: [
+      "Assemblage Semelle/Tige",
+      "Réparations",
+      "Montage industriel",
+    ],
     specifications: {
       Type: "Colle PU, Néoprène",
       Séchage: "Rapide",
@@ -220,5 +223,58 @@ export const productDetailsData = {
     },
     details:
       "Matériaux fiables, testés pour résister à l'usure et conserver leur aspect dans le temps.",
+  },
+
+  "revetement-interieur": {
+    title: "Revêtements Tableau & Portières",
+    category: "Revêtement Technique",
+    imageUrl:
+      "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
+    description:
+      "Revêtements techniques dédiés aux tableaux de bord et panneaux de portières, alliant résistance, toucher premium et durabilité.",
+    applications: ["Tableaux de bord", "Portières", "Accoudoirs"],
+    specifications: {
+      Résistance: "Anti-rayures",
+      Confort: "Toucher soft-touch",
+      Durabilité: "Anti-usure intensif",
+      Variantes: "Simili cuir / tissu technique",
+    },
+    details:
+      "Solutions adaptées aux environnements automobiles exigeants, conçues pour offrir un rendu esthétique durable.",
+  },
+
+  "mousses-sieges": {
+    title: "Mousses Techniques pour Sièges",
+    category: "Confort & Sécurité",
+    imageUrl:
+      "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
+    description:
+      "Mousses haute densité conçues pour offrir maintien, confort et sécurité aux sièges automobiles.",
+    applications: ["Sièges conducteur", "Banquettes", "Appui-têtes"],
+    specifications: {
+      Densité: "Haute résilience",
+      Sécurité: "Anti-feu",
+      Confort: "Mémoire de forme",
+      Variantes: "Souple / semi-ferme / ferme",
+    },
+    details:
+      "Matériaux testés et certifiés pour une utilisation durable, résistant à la compression répétée.",
+  },
+  "tissus-technique": {
+    title: "Tissus Anti-déchirure & Anti-usure",
+    category: "Durabilité",
+    imageUrl:
+      "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
+    description:
+      "Tissus techniques renforcés conçus pour résister aux frottements, déchirures et usages intensifs dans l’automobile.",
+    applications: ["Sièges", "Planchers", "Zones haute usure"],
+    specifications: {
+      Résistance: "Anti-déchirure",
+      Durabilité: "Anti-abrasion",
+      Entretien: "Facile à nettoyer",
+      Variantes: "Uni / renforcé / technique",
+    },
+    details:
+      "Textiles fiables et robustes adaptés aux environnements automobiles exigeants.",
   },
 };

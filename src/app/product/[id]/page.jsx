@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { use,useState } from "react"
-import { productDetailsData } from "@/lib/products-data"
-import { ChevronDown } from "lucide-react"
+import Link from "next/link";
+import { use, useState } from "react";
+import { productDetailsData } from "@/lib/products-data";
+import { ChevronDown } from "lucide-react";
 
 export default function ProductDetailPage({ params }) {
   const resolvedParams = use(params);
@@ -19,7 +19,7 @@ export default function ProductDetailPage({ params }) {
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Product not found</h1>
           <Link href="/" className="text-blue-600 hover:underline">
-            Back to home
+            Retour à l’accueil
           </Link>
         </div>
       </div>

@@ -84,7 +84,9 @@ export default function Nav() {
           {/* Logo nav */}
           <div className="flex items-center gap-6">
             <Link href="/" className="text-primary hover:text-primary/90">
-              <Image src="/logo.png" alt="Logo" width={170} height={50} />
+              <Image src="/logo2.png" alt="Logo" width={100} height={50} 
+              style={{ width: '130px', height: '60px' }}
+              />
             </Link>
           </div>
         </div>
@@ -113,8 +115,8 @@ export default function Nav() {
           {/* <Button asChild variant="ghost" size="sm" className="text-sm">
             <a href="#">Sign In</a>
           </Button> */}
-          <Button asChild size="sm" className="text-sm">
-            <a href="#">Contact</a>
+          <Button asChild  className="text-sm ">
+            <a href="#">NOS PROMOS !!🔥​</a>
           </Button>
         </div>
       </div>

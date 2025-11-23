@@ -10,6 +10,7 @@ export default async function CategoryPage({ params }) {
     description:
       "Des matériaux fiables pour une fabrication robuste et durable",
     backgroundImage: "/chaussure.png",
+    backgroundImage2: "/chaussure.png",
 
     heading1: "Composants techniques pour la fabrication de chaussures",
     heading2:
@@ -21,6 +22,7 @@ export default async function CategoryPage({ params }) {
     description:
       "Des tissus élégants et résistants pour l’intérieur et l’extérieur",
     backgroundImage: "/ameublement.png",
+    backgroundImage2: "/ameublement4.png",
 
     heading1: "Tissus décoratifs pour espaces résidentiels et professionnels",
     heading2:
@@ -32,6 +34,7 @@ export default async function CategoryPage({ params }) {
     description:
       "Solutions textiles techniques conformes aux exigences de l’industrie automobile.",
     backgroundImage: "/automobile.png",
+    backgroundImage2: "/automobile2.png",
 
     heading1: "Confort, résistance et finition premium",
     heading2:
@@ -72,7 +75,7 @@ export default async function CategoryPage({ params }) {
             href="/"
             className="text-white hover:text-gray-200 mb-4 inline-block text-sm transition-colors"
           >
-            ← Back to Home
+            ← Retour à l’accueil
           </Link>
           <h1 className="text-4xl md:text-xl font-bold text-white mb-4">
             {category.title}
@@ -93,7 +96,7 @@ export default async function CategoryPage({ params }) {
                 
                 <div className="bg-muted hidden lg:block rounded-md w-8 h-full flex-1 relative">
                   <DestinationCardDemo 
-                  src={category.backgroundImage}
+                  src={category.backgroundImage2}
                   alt={category.title}
                   fill
                   className="object-cover rounded-md"
