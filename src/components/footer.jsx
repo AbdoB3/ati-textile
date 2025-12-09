@@ -15,14 +15,14 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-100">
       <div className="mx-auto max-w-7xl px-4 py-12">
         {/* Top Section: Logo & Description */}
-        <div className="grid grid-cols-1 gap-8 md:gap-28 md:grid-cols-2 mb-12 ">
+        <div className="grid grid-cols-1 gap-8 md:gap-20 md:grid-cols-3 mb-12 ">
           {/* Logo & Company Info */}
-          <div className="md:col-span-1 ">
+          <div className="md:col-span-2 ">
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo2.png" alt="Logo" width={140} height={50} />
+              <Image src="/logo3.png" alt="Logo" width={140} height={50} />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
-              L’import-export et la distribution de matières textiles, tissus
+              L’import, la distribution et la fabrication de matières textiles, tissus
               automobiles, <br/> matériaux pour chaussures et ameublement
             </p>
           </div>
@@ -34,10 +34,10 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-600" />
                 <a
-                  href="tel:+33123456789"
+                  href="tel:+212661183646"
                   className="text-slate-400 hover:text-white transition"
                 >
-                  +212 (0)6 00 00 00 89
+                  +212 (0)6 61 18 36 46
                 </a>
               </div>
               <div className="flex items-center gap-3">
