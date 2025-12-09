@@ -8,7 +8,7 @@ export default function ExpertiseSection() {
     {
       title: "Qualité Contrôlée",
       description:
-        "Des processus rigoureux pour garantir des tissus fiables, durables et adaptés aux exigences professionnelles.",
+        "Des processus rigoureux pour garantir des matériaux fiables, durables et adaptés aux exigences professionnelles.",
     },
     {
       title: "Fiabilité & Engagement",
@@ -18,7 +18,7 @@ export default function ExpertiseSection() {
   ];
 
   return (
-    <section className="py-24 px-4 bg-white relative overflow-hidden">
+    <section className="pb-24 pt-4 px-4 bg-white relative overflow-hidden">
       {/* Subtle background accent image on right */}
       <div
         className="absolute hidden md:block right-0 top-0 w-1/3 h-full opacity-5 rounded-xl pointer-events-none"

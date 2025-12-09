@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
 function Feature() {
@@ -16,22 +15,19 @@ function Feature() {
           </div>
           <div className="flex gap-4 pl-0 lg:pl-20 flex-col flex-1">
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left md:pt-2">
+              <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl text-left md:pt-2">
                 Excellence & Innovation dans le Textile Industriel
               </h2>
               <p className="text-lg max-w-xl lg:max-w-lg lg:mt-2 leading-relaxed tracking-tight text-muted-foreground text-left">
-                Chez{" "}
-                <span className="font-semibold text-blue-500">
-                  Africa Trade & Industry
-                </span>
-                , nous réunissons les meilleurs matériaux pour les secteurs de
-                l’<b>ameublement</b>, de l’<b>automobile</b>, de la{" "}
-                <b>chaussure</b> et du <b>Textile</b>. Grâce à notre expertise
-                et à un réseau solide, nous offrons des solutions textiles
-                complètes, alliant qualité, innovation et durabilité.{" "}
-                  Notre engagement est d’accompagner chaque client avec des
-                  matériaux fiables et un service professionnel adapté à ses
-                  besoins.
+                <b>Africa Trade & Industry</b> incarne l’alliance entre expertise
+                textile et sourcing international haut de gamme. Depuis
+                Casablanca, nous sélectionnons des matières d’exception — tissus
+                d’ameublement, simili cuir, textiles automobiles, EVA et
+                fournitures professionnelles — auprès de fabricants
+                internationaux réputés. Notre mission : offrir à chaque client
+                professionnel une qualité irréprochable, un choix exclusif et un
+                accompagnement sur-mesure répondant aux standards les plus
+                élevés du marché.
               </p>
             </div>
           </div>

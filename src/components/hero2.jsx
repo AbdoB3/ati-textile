@@ -8,24 +8,26 @@ export default function HeroCarousel() {
   const slides = [
     {
       id: 1,
-      image: "/carousel/ameublement2.jpg",
-      alt: "Textile Collection",
-      title: "Ameublement Premium",
-      description: "Découvrez notre collection de tissus d'ameublement haut de gamme",
-    },
-    {
-      id: 2,
-      image: "/carousel/tissuAutomobile.jpg",
-      alt: "Automotive Fabrics",
-      title: "Tissus Automobiles",
-      description: "Solutions textiles innovantes pour l'industrie automobile",
-    },
-    {
-      id: 3,
-      image: "/carousel/00005-2031-p.jpg",
+      image: "https://fabric.axiomthemes.com/wp-content/uploads/2022/08/70_2-1-min.jpg",
       alt: "Material Samples",
       title: "Matériaux Textiles",
       description: "Sélection rigoureuse de matières premières de qualité",
+    },
+    {
+      id: 2,
+      image: "https://edgartextiles.com/wp-content/uploads/2021/10/domestic-fabrics-for-furnitures.jpeg",
+      alt: "Textile Collection",
+      title: "Ameublement Premium",
+      description: "Découvrez notre collection de tissus d'ameublement haut de gamme",
+      
+    },
+    {
+      id: 3,
+      image: "https://edgartextiles.com/wp-content/uploads/2023/10/leather-car-interior.jpg",
+      alt: "Automotive Fabrics",
+      title: "Tissus Automobiles",
+      description: "Solutions textiles innovantes pour l'industrie automobile",
+      
     },
   ]
 
@@ -47,7 +49,7 @@ export default function HeroCarousel() {
           }`}
         >
           <img src={slide.image || "/placeholder.svg"} alt={slide.alt} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-black/30" />
 
           <div className="absolute inset-0 flex items-center justify-center">
             <div

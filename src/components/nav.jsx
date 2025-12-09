@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -14,6 +15,13 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { Tag } from "lucide-react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ['400', '600', '700'],
+  subsets: ["latin"],
+});
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
@@ -22,15 +30,34 @@ const navigationLinks = [
   { href: "/category/ameublement", label: "Ameublement" },
   { href: "/category/tissus-automobiles", label: "Automobiles" },
   { href: "/category/autres-textiles", label: "Textiles" },
+  { href: "/contact", label: "Contact" },
+
 ];
 
 export default function Nav() {
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Check if we're on homepage (which has dark hero background)
+  const isHomePage = pathname === "/";
 
   return (
-    // <header className="bg-transparent px-4 md:px-6 absolute w-full z-50"></header>
-    <header className="border-b bg-[#262856] border-b-slate-200 px-4 md:px-6 w-full absolute z-50">
-      <div className="flex h-20 items-center justify-between gap-4">
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled || !isHomePage
+          ? "bg-[#262856] shadow-sm"
+          : "bg-transparent shadow-none"
+      } ${poppins.className}`}
+    >
+      <div className="flex h-24 items-center justify-between gap-4 px-4 md:px-6">
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu trigger */}
@@ -91,11 +118,11 @@ export default function Nav() {
           <div className="flex items-center gap-6">
             <Link href="/" className="text-primary hover:text-primary/90">
               <Image
-                src="/logo2.png"
+                src="/logo3.png"
                 alt="Logo"
-                width={100}
-                height={50}
-                style={{ width: "130px", height: "60px" }}
+                width={200}
+                height={60}
+                style={{ width: "140px", height: "70px" }}
               />
             </Link>
           </div>
@@ -110,7 +137,7 @@ export default function Nav() {
                   <NavigationMenuLink asChild active={pathname === link.href}>
                     <Link
                       href={link.href}
-                      className="py-1.5 font-medium text-slate-100 hover:text-primary"
+                      className="py-1.5 font-medium text-slate-100 hover:text-primary transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -121,10 +148,16 @@ export default function Nav() {
           </NavigationMenu>
         </div>
 
-        {/* Right side */}
+        {/* Right side - Simple Professional Button */}
         <div className="flex items-center gap-10">
-          <Button asChild className="text-sm">
-            <Link href="#">NOS PROMOS !!🔥​</Link>
+          <Button 
+            asChild 
+            className="relative bg-red-600 hover:bg-red-700 text-white font-semibold shadow-lg transition-all duration-300"
+          >
+            <Link href="/liquidation" className="flex items-center gap-2">
+              <Tag className="w-4 h-4" />
+              Liquidation Stock
+            </Link>
           </Button>
         </div>
       </div>
