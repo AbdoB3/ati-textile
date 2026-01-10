@@ -24,7 +24,7 @@ export default function CategoriesSection() {
       number: "03",
     },
     {
-      id: "textiles",
+      id: "autres-textiles",
       title: "Textiles",
       image: "/textile.png",
       number: "04",
