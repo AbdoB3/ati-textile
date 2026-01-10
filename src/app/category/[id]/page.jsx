@@ -18,9 +18,9 @@ export default async function CategoryPage({ params }) {
   },
 
   ameublement: {
-    title: "Textile d'Ameublement",
+    title: "Ameublement",
     description:
-      "Des tissus élégants et résistants pour l’intérieur et l’extérieur",
+      "Des tissus et fournitures adaptées aux exigences de l’ameublement",
     backgroundImage: "/ameublement.png",
     backgroundImage2: "/ameublement4.png",
 
@@ -39,6 +39,16 @@ export default async function CategoryPage({ params }) {
     heading1: "Confort, résistance et finition premium",
     heading2:
       "Nos tissus offrent une excellente résistance, un entretien simplifié et une durabilité éprouvée pour les intérieurs automobiles.",
+  },
+  "autres-textiles": {
+    title: "Textiles Industriels",
+    description:
+      "Textiles techniques pour diverses applications industrielles",
+    backgroundImage: "/textile.png",
+    backgroundImage2: "/ameublement/tissu-ameublement.jpg",
+    heading1: "Solutions textiles polyvalentes pour usages industriels",
+    heading2:
+      "Nous proposons des textiles adaptés à de multiples secteurs, alliant performance, durabilité et facilité d'entretien.",
   },
 };
 

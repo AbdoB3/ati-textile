@@ -1,16 +1,20 @@
 import { ProductCard } from "@/components/cards-1";
 
-
-// Sample data for demonstration
-
-
-export default function ProductCardDemo({products = []}) {
+export default function ProductCardDemo({ products = [] }) {
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto max-w-6xl">
       {products.length === 0 ? (
-        <p className="text-center text-muted-foreground">Aucun produit disponible</p>
+        <p className="text-center text-muted-foreground">
+          Aucun produit disponible
+        </p>
       ) : (
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div
+          className={`grid grid-cols-1 gap-6 sm:grid-cols-2 ${
+            products.length === 2 
+              ? "lg:grid-cols-2 lg:max-w-4xl lg:mx-auto" 
+              : "lg:grid-cols-3"
+          }`}
+        >
           {products.map((product, index) => (
             <ProductCard
               key={product.id || `product-${index}`}

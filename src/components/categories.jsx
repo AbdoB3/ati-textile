@@ -6,21 +6,21 @@ import { ArrowRight } from "lucide-react";
 export default function CategoriesSection() {
   const categories = [
     {
-      id: "matiere-chaussure",
-      title: "Chaussure",
-      image: "/chaussure.png",
-      number: "01",
-    },
-    {
       id: "ameublement",
       title: "Ameublement",
       image: "/ameublement4.png",
-      number: "02",
+      number: "01",
     },
     {
       id: "tissus-automobiles",
       title: "Automobiles",
       image: "/automobile2.png",
+      number: "02",
+    },
+    {
+      id: "matiere-chaussure",
+      title: "Chaussure",
+      image: "/chaussure.png",
       number: "03",
     },
     {

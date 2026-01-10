@@ -26,9 +26,9 @@ const poppins = Poppins({
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/category/matiere-chaussure", label: "Chaussure" },
   { href: "/category/ameublement", label: "Ameublement" },
   { href: "/category/tissus-automobiles", label: "Automobiles" },
+  { href: "/category/matiere-chaussure", label: "Chaussure" },
   { href: "/category/autres-textiles", label: "Textiles" },
   { href: "/contact", label: "Contact" },
 
@@ -118,7 +118,7 @@ export default function Nav() {
           <div className="flex items-center gap-6">
             <Link href="/" className="text-primary hover:text-primary/90">
               <Image
-                src="/logo3.png"
+                src="/logo4.png"
                 alt="Logo"
                 width={200}
                 height={60}
@@ -156,7 +156,7 @@ export default function Nav() {
           >
             <Link href="/liquidation" className="flex items-center gap-2">
               <Tag className="w-4 h-4" />
-              Liquidation Stock
+              Déstockage
             </Link>
           </Button>
         </div>

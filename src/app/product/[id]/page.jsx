@@ -8,6 +8,7 @@ import { ChevronDown } from "lucide-react";
 export default function ProductDetailPage({ params }) {
   const resolvedParams = use(params);
   const product = productDetailsData[resolvedParams.id];
+  console.log(product);
   const [openSections, setOpenSections] = useState({
     applications: true,
     specifications: false,
@@ -94,7 +95,7 @@ export default function ProductDetailPage({ params }) {
               </div>
 
               {/* Specifications Section */}
-              <div className="bg-white rounded-lg border border-gray-200">
+              {/* <div className="bg-white rounded-lg border border-gray-200">
                 <button
                   onClick={() => toggleSection("specifications")}
                   className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
@@ -125,14 +126,16 @@ export default function ProductDetailPage({ params }) {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
             </div>
 
             {/* Call to Action */}
             <div className="mt-8">
-              <button className="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
-                Contacter-Nous
-              </button>
+              <Link href="/contact">
+                <button className="w-full cursor-pointer bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                  Contacter-Nous
+                </button>
+              </Link>
             </div>
           </div>
         </div>

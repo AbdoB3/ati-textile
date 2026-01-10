@@ -1,96 +1,78 @@
 export const productsData = {
   "matiere-chaussure": [
     {
-      title: "Cuir Synthétique & Naturel",
-      category: "Matières Premières",
-      imageUrl:
-        "https://www.microfiberleather.com/wp-content/uploads/sites/59/2022/04/synthetic-leather.jpg",
-      href: "/product/cuir-synthetique",
+      title: "Plaques EVA",
+      imageUrl: "/chaussure/eva.png",
+      href: "/product/plaques-eva",
     },
     {
-      title: "Tissus Techniques pour Chaussures",
-      category: "Textile Technique",
+      title: "Tissus Enduit pour Chaussures",
       imageUrl:
-        "https://image.made-in-china.com/202f0j00TJgWFHtlAArn/Huafon-Grossiste-Microfibre-Cuir-PU-Tissu-Su-d-Housse-de-Canap-Doublure-de-Chaussure-Tissu-Sac-V-tement-Fabricant.webp",
-      href: "/product/tissus-chaussure",
+        "/chaussure/technique.png",
+      href: "/product/tissus-technique",
     },
+    
     {
-      title: "Semelles Injectées & EVA",
-      category: "Composants",
-      imageUrl: "https://m.media-amazon.com/images/I/71wzrPcgi4L.jpg",
-      href: "/product/semelles-eva",
-    },
-    {
-      title: "Colle pour Chaussure",
-      category: "Fournitures",
+      title: "Fournitures pour Chaussure",
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8CL87tqBMRRe5ti1Q5Daqo1sXk7AUBbJRg&s",
-      href: "/product/accessoires-chaussure",
+        "/chaussure/fourniture.png",
+      href: "/product/fourniture-chaussure",
     },
   ],
 
   ameublement: [
     {
-      title: "Tissus d’Ameublement Haute Résistance",
-      category: "Textiles",
+      title: "Tissus d’Ameublement",
       imageUrl:
-        "https://alcantech.com/cdn/shop/files/S7d15c0a834f54a3194f4075afff1ede05.webp?v=1726353445&width=713",
+        "/ameublement/tissu-ameublement2.png",
 
       href: "/product/tissus-ameublement",
     },
     {
-      title: "Mousses Industrielles",
-      category: "Rembourrage",
+      title: "Simili Cuir",
+     
       imageUrl:
-        "https://alcantech.com/cdn/shop/files/S7d15c0a834f54a3194f4075afff1ede05.webp?v=1726353445&width=713",
-
-      href: "/product/mousses-industrielles",
-    },
-    {
-      title: "Revêtements Simili Cuir",
-      category: "Revêtement",
-      imageUrl:
-        "https://alcantech.com/cdn/shop/files/S7d15c0a834f54a3194f4075afff1ede05.webp?v=1726353445&width=713",
+        "/ameublement/similicuire.png",
       href: "/product/simili-cuir",
     },
     {
-      title: "Composants de Meuble",
-      category: "Fournitures",
+      title: "Fournitures pour Ameublement",
       imageUrl:
-        "https://alcantech.com/cdn/shop/files/S7d15c0a834f54a3194f4075afff1ede05.webp?v=1726353445&width=713",
+        "/ameublement/fourniture.png",
 
-      href: "/product/composants-meuble",
+      href: "/product/fournutures-ameublement",
     },
   ],
 
   "tissus-automobiles": [
     {
-      title: "Tissus Automobile Ignifugés",
-      category: "Textile Automobile",
+      title: "Skai",
       imageUrl:
-        "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
-      href: "/product/tissus-automobile",
+        "/automobile/skai&pvc.png",
+      href: "/product/skai",
     },
     {
-      title: "Revêtements Tableau & Portières",
-      category: "Revêtement Technique",
+      title: "Tissus Jacquard",
+      // category: "Revêtement Technique",
+      imageUrl:
+        "/automobile/jacquard.png",
+      href: "/product/tissus-jacquard",
+    },
+    
+    
+  ],
+  "autres-textiles": [
+    {
+      title: "Tissus Techniques",
       imageUrl:
         "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
-      href: "/product/revetement-interieur",
+      href: "/product/tissus-techniques",
     },
     {
-      title: "Mousses Techniques pour Sièges",
-      category: "Confort & Sécurité",
+      title: "Tissus Industriels",
       imageUrl:
         "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
-      href: "/product/mousses-sieges",
-    },
-    {
-      title: "Tissus Anti-déchirure & Anti-usure",
-      category: "Durabilité",
-      imageUrl:
-        "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
-      href: "/product/tissus-technique",
+      href: "/product/tissus-industriels",
     },
   ],
 };
@@ -114,11 +96,11 @@ export const productDetailsData = {
       "Nos cuirs synthétiques sont sélectionnés pour leur durabilité, leur flexibilité et leur aspect esthétique. Disponibles en plusieurs textures, finitions et coloris.",
   },
 
-  "tissus-chaussure": {
+  "tissus-technique": {
     title: "Tissus Techniques pour Chaussures",
     category: "Textile Technique",
     imageUrl:
-      "https://image.made-in-china.com/202f0j00TJgWFHtlAArn/Huafon-Grossiste-Microfibre-Cuir-PU-Tissu-Su-d-Housse-de-Canap-Doublure-de-Chaussure-Tissu-Sac-V-tement-Fabricant.webp",
+      "/chaussure/technique.png",
     description:
       "Tissus techniques adaptés à la confection de tiges, doublures et renforts de chaussures.",
     applications: ["Tiges", "Doublures", "Chaussure Sport / Ville"],
@@ -132,10 +114,10 @@ export const productDetailsData = {
       "Offrent confort, respirabilité et solidité. Idéaux pour chaussures de sport, sécurité, et prêt-à-porter.",
   },
 
-  "semelles-eva": {
-    title: "Semelles Injectées & EVA",
+  "plaques-eva": {
+    title: "Plaques & Semelles EVA",
     category: "Composants",
-    imageUrl: "https://m.media-amazon.com/images/I/71wzrPcgi4L.jpg",
+    imageUrl: "/chaussure/eva.png",
     description:
       "Semelles légères et résistantes en EVA ou matériaux injectés pour confort et amorti optimal.",
     applications: ["Baskets", "Chaussures de sécurité", "Chaussures médicales"],
@@ -149,11 +131,11 @@ export const productDetailsData = {
       "Adaptées aux besoins ergonomiques et techniques. Idéales pour une production industrielle de haute cadence.",
   },
 
-  "accessoires-chaussure": {
-    title: "Colle & Fournitures Chaussure",
+  "fourniture-chaussure": {
+    title: "Fournitures Chaussure",
     category: "Fournitures",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8CL87tqBMRRe5ti1Q5Daqo1sXk7AUBbJRg&s",
+      "/chaussure/fourniture.png",
     description:
       "Colles et consommables nécessaires à l’assemblage précis et durable de chaussures.",
     applications: [
@@ -175,7 +157,7 @@ export const productDetailsData = {
     title: "Tissus d’Ameublement Haute Résistance",
     category: "Textiles",
     imageUrl:
-      "https://alcantech.com/cdn/shop/files/S7d15c0a834f54a3194f4075afff1ede05.webp?v=1726353445&width=713",
+      "/ameublement/tissu-ameublement2.png",
     description:
       "Tissus décoratifs robustes conçus pour canapés, chaises, coussins et aménagement intérieur.",
     applications: ["Canapés", "Chaises", "Hôtellerie & Décoration"],
@@ -189,6 +171,27 @@ export const productDetailsData = {
       "Sélection variée combinant esthétique et longue durée de vie. Idéale pour mobilier domestique ou professionnel.",
   },
 
+  "simili-cuir": {
+    title: "Simili Cuir pour Ameublement",
+    category: "Revêtements",
+    imageUrl:
+      "/ameublement/similicuire.png",
+    description: "Simili cuir durable et élégant pour canapés, fauteuils et sièges divers.",
+    applications: ["Canapés", "Fauteuils", "Sièges de bureau"],
+    details:
+      "Offre un aspect luxueux avec une résistance accrue à l'usure et aux éclaboussures. Facile à entretenir.",
+  },
+
+  "fournutures-ameublement": {
+    title: "Fournitures pour Ameublement",
+    category: "Accessoires",
+    imageUrl:
+      "/ameublement/fourniture.png",
+    description:"accessoires et composants essentiels pour la fabrication et la réparation de meubles.",
+    applications: ["Rembourrage", "Assemblage Meuble", "Décoration"],
+    details:
+      "Comprend agrafes, mousses, pieds de meubles et autres fournitures de qualité professionnelle.",
+  },
   "mousses-industrielles": {
     title: "Mousses Industrielles",
     category: "Rembourrage",
@@ -207,11 +210,11 @@ export const productDetailsData = {
       "Conçues pour maintien durable et confort optimal, adaptées aux environnements d’usage intensif.",
   },
 
-  "tissus-automobile": {
-    title: "Tissus Automobile Ignifugés",
+  "skai": {
+    title: "Skai et PVC pour Automobile",
     category: "Textile Automobile",
     imageUrl:
-      "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
+      "/automobile/skai&pvc.png",
     description:
       "Tissus techniques certifiés pour garnitures automobiles alliant résistance, sécurité et finition premium.",
     applications: ["Sièges", "Plafonds", "Portières"],
@@ -225,11 +228,11 @@ export const productDetailsData = {
       "Matériaux fiables, testés pour résister à l'usure et conserver leur aspect dans le temps.",
   },
 
-  "revetement-interieur": {
-    title: "Revêtements Tableau & Portières",
+  "tissus-jacquard": {
+    title: "Tissus et mousse Jacquard ",
     category: "Revêtement Technique",
     imageUrl:
-      "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
+      "/automobile/jacquard.png",
     description:
       "Revêtements techniques dédiés aux tableaux de bord et panneaux de portières, alliant résistance, toucher premium et durabilité.",
     applications: ["Tableaux de bord", "Portières", "Accoudoirs"],
@@ -260,7 +263,7 @@ export const productDetailsData = {
     details:
       "Matériaux testés et certifiés pour une utilisation durable, résistant à la compression répétée.",
   },
-  "tissus-technique": {
+  "tissus-techniques": {
     title: "Tissus Anti-déchirure & Anti-usure",
     category: "Durabilité",
     imageUrl:
@@ -276,5 +279,18 @@ export const productDetailsData = {
     },
     details:
       "Textiles fiables et robustes adaptés aux environnements automobiles exigeants.",
+  },
+  "tissus-industriels": {
+    title: "Tissus Industriels Haute Performance",
+    category: "Textile Industriel",
+    imageUrl:
+      "https://sc04.alicdn.com/kf/H5fe94cb858e64dfb8687417eb1a39c2aJ.jpg_350x350.jpg",
+    description:
+      "Tissus industriels haute performance pour des applications exigeantes.",
+    applications: ["Filtres", "Bandes transporteuses", "Revêtements"],
+    specifications: {
+      Résistance: "Chimique & Mécanique",
+      Température: "Haute résistance thermique",
+    },
   },
 };
