@@ -22,7 +22,7 @@ const openSans = Open_Sans({
 
 export const metadata = {
   title: "Africa Trade & Industry",
-  description: "Fournisseur de textiles industriels pour l'ameublement, l'automobile et la chaussure en Afrique",
+  description: "Africa Trade & Industry est un fournisseur B2B de solutions textiles pour l’ameublement, l’automobile et l’industrie.",
 };
 
 export default function RootLayout({ children }) {

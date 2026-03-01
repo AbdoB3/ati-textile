@@ -84,7 +84,7 @@ export default function ContactPage() {
     try {
       // Remplacez ces valeurs par les vôtres
       const result = await emailjs.send(
-        "service_7li1zoe", // ← Votre Service ID
+        "service_2bz3741", // ← Votre Service ID
         "template_z39qbk7", // ← Votre Template ID
         {
           nom: formData.nom,
@@ -149,7 +149,7 @@ export default function ContactPage() {
             Nous Contacter
           </h1>
           <p className="text-xl text-gray-100">
-            Nous sommes là pour répondre à toutes vos questions
+            L’équipe de Africa Trade & Industry est à votre disposition pour toute demande d’information ou devis.
           </p>
         </div>
       </div>
@@ -353,7 +353,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:sticky lg:top-32">
+            <div className="lg:sticky lg:top-32 mt-9 lg:mt-21">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
                 {/* Header */}
                 <div className="p-6 bg-gray-900">

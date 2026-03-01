@@ -19,7 +19,7 @@ function Feature() {
                 Excellence & Innovation dans le Textile Industriel
               </h2>
               <p className="text-lg max-w-xl lg:max-w-lg lg:mt-2 leading-relaxed tracking-tight text-muted-foreground text-left">
-                <b>Africa Trade & Industry</b> incarne l’alliance entre expertise
+                <b className="text-[#262856]">Africa Trade & Industry</b> incarne l’alliance entre expertise
                 textile et sourcing international haut de gamme. Depuis
                 Casablanca, nous sélectionnons des matières d’exception — tissus
                 d’ameublement, simili cuir, textiles automobiles, EVA et

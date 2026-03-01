@@ -32,7 +32,7 @@ export default function CategoriesSection() {
   ];
 
   return (
-    <section className="pt-16  md:py-12 bg-gray-50">
+    <section className="pt-16  md:pt-12 bg-gray-50">
       <div className="mx-auto">
         {/* Optional: Add a section title */}
         <div className="text-center mb-12">
@@ -61,7 +61,7 @@ export default function CategoriesSection() {
                 />
 
                 {/* Dark overlay for text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/60 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent group-hover:from-black/70 transition-colors duration-300" />
 
                 {/* Number - Top Left */}
                 <div className="absolute top-7 left-7">

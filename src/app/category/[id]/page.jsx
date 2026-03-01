@@ -8,7 +8,7 @@ export default async function CategoryPage({ params }) {
   "matiere-chaussure": {
     title: "Matières pour Chaussure",
     description:
-      "Des matériaux fiables pour une fabrication robuste et durable",
+      "Solutions en matières premières dédiées à la fabrication de chaussures, sélectionnées pour leur fiabilité, leur résistance et leur durabilité,  adaptées aux besoins des professionnels et aux exigences de production.",
     backgroundImage: "/chaussure.png",
     backgroundImage2: "/chaussure.png",
 
@@ -20,7 +20,7 @@ export default async function CategoryPage({ params }) {
   ameublement: {
     title: "Ameublement",
     description:
-      "Des tissus et fournitures adaptées aux exigences de l’ameublement",
+      "Large sélection de tissus d’ameublement, similicuir et matières dédiées à la décoration intérieure, conçus pour répondre aux exigences des professionnels et des projets résidentiels.",
     backgroundImage: "/ameublement.png",
     backgroundImage2: "/ameublement4.png",
 
@@ -32,7 +32,7 @@ export default async function CategoryPage({ params }) {
   "tissus-automobiles": {
     title: "Tissus Automobiles",
     description:
-      "Solutions textiles techniques conformes aux exigences de l’industrie automobile.",
+      "Gamme complète de tissus, skaï PVC et solutions techniques dédiées à l’habillage et à la rénovation automobile, conçues pour répondre aux exigences des professionnels du secteur.",
     backgroundImage: "/automobile.png",
     backgroundImage2: "/automobile2.png",
 
@@ -43,7 +43,7 @@ export default async function CategoryPage({ params }) {
   "autres-textiles": {
     title: "Textiles Industriels",
     description:
-      "Textiles techniques pour diverses applications industrielles",
+      "Large gamme de textiles techniques et décoratifs destinés à différents secteurs d’application, sélectionnés pour leur performance et leur durabilité afin de répondre aux besoins des professionnels et aux exigences de production.",
     backgroundImage: "/textile.png",
     backgroundImage2: "/ameublement/tissu-ameublement.jpg",
     heading1: "Solutions textiles polyvalentes pour usages industriels",
@@ -78,7 +78,7 @@ export default async function CategoryPage({ params }) {
           backgroundImage: `url('${category.backgroundImage}')`,
         }}
       >
-        <div className="absolute inset-0 bg-[#262856]/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative max-w-4xl mx-auto px-4 py-28">
           <Link
@@ -102,7 +102,7 @@ export default async function CategoryPage({ params }) {
           <div className="w-full py-10 ">
             <div className="container mx-auto">
               
-              <div className="flex flex-col-reverse lg:flex-row gap-10 items-start">
+              {/* <div className="flex flex-col-reverse lg:flex-row gap-10 items-start">
                 
                 <div className="bg-muted hidden lg:block rounded-md w-8 h-full flex-1 relative">
                   <DestinationCardDemo 
@@ -122,7 +122,7 @@ export default async function CategoryPage({ params }) {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

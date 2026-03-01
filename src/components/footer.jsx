@@ -6,6 +6,7 @@ import {
   Twitter,
   Instagram,
   Linkedin,
+  MessageCircle,
 } from "lucide-react";
 
 import Image from "next/image";
@@ -34,10 +35,21 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-600" />
                 <a
-                  href="tel:+212661183646"
+                  href="tel:+212522986229"
                   className="text-slate-400 hover:text-white transition"
                 >
-                  +212 (0)6 61 18 36 46
+                  +212 (0)5 22 98 62 29
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <MessageCircle className="w-5 h-5 text-blue-600" />
+                <a
+                  href="https://wa.me/212661716575"
+                  className="text-slate-400 hover:text-white transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +212 (0)6 61 71 65 75
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -46,14 +58,15 @@ export default function Footer() {
                   href="mailto:info@yourbrand.com"
                   className="text-slate-400 hover:text-white transition"
                 >
-                  Contact@africatradeindutry.com
+                  Contact@atifabrics.com
                 </a>
               </div>
+              
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-slate-400">191 Bd Bir Anzarane</p>
-                  <p className="text-slate-400">20000 Casablanca, Maroc</p>
+                  <p className="text-slate-400">20320 Casablanca, Maroc</p>
                 </div>
               </div>
             </div>
@@ -75,7 +88,7 @@ export default function Footer() {
         {/* Bottom Section: Social & Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-slate-400 text-sm mb-4 md:mb-0">
-            &copy; 2025 Africa Trade & Industry. Tous droits réservés.
+            &copy; 2026 Africa Trade & Industry. Tous droits réservés.
           </p>
 
           {/* Social Media Icons */}
