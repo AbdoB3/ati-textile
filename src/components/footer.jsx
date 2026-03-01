@@ -23,8 +23,7 @@ export default function Footer() {
               <Image src="/logo3.png" alt="Logo" width={140} height={50} />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
-              L’import, la distribution et la fabrication de matières textiles, tissus
-              automobiles, <br/> matériaux pour chaussures et ameublement
+             <b className="text-white">Africa Trade & Industry</b> est spécialisée dans la distribution et la fabrication <br/> de solutions textiles pour les secteurs de l’automobile, de la chaussure et de l’ameublement.
             </p>
           </div>
 
