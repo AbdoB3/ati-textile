@@ -46,13 +46,13 @@ export const productsData = {
 
   "tissus-automobiles": [
     {
-      title: "PVC et Simili cuir",
+      title: "Simili cuir & Skai automobiles",
       imageUrl:
         "/automobile/skai&pvc.png",
       href: "/product/Simili_cuir_PVC",
     },
     {
-      title: "Tissus automobiles",
+      title: "Tissus Automobiles",
       // category: "Revêtement Technique",
       imageUrl:
         "/automobile/jacquard.png",
@@ -115,7 +115,7 @@ export const productDetailsData = {
     imageUrl:
       "/chaussure/technique.png",
     description:
-      "Tissus enduits spécialement conçus pour la fabrication de chaussures, offrant une bonne résistance à l’usure et à l’humidité tout en assurant une finition esthétique. Faciles à travailler, ils conviennent aux projets nécessitant souplesse et durabilité.",
+      "Tissus techniques spécialement développés pour la fabrication de chaussures, offrant une excellente résistance à l’usure et à l’humidité. Conçus pour allier souplesse, durabilité et qualité de finition, ils facilitent le travail en production tout en garantissant un rendu esthétique conforme aux exigences du secteur.",
     applications: ["Tiges de chaussures", "Renforts décoratifs", "Chaussures casual et professionnelles","Articles de maroquinerie"],
     specifications: {
       Composition: "100% Polyester ou Mixte",
@@ -132,7 +132,7 @@ export const productDetailsData = {
     category: "Composants",
     imageUrl: "/chaussure/eva.png",
     description:
-      "Plaques EVA légères et résistantes, offrant une excellente absorption des chocs et une grande flexibilité. Adaptées aux applications nécessitant confort, durabilité et facilité de transformation, elles constituent un matériau essentiel pour la fabrication et la finition de chaussures.",
+      "Plaques en EVA (éthylène-acétate de vinyle) développées pour les applications de chaussure, combinant légèreté, élasticité et excellente absorption des chocs.Faciles à découper, façonner et coller, elles assurent performance mécanique, stabilité et confort d’utilisation. Idéales pour la fabrication de semelles et de composants techniques de chaussure.",
     applications: ["Sandales et chaussures légères", "Semelles intermédiaires et extérieures", "Sandales et chaussures légères","Amorti et confort"],
     specifications: {
       Densité: "Sur mesure",
@@ -174,7 +174,7 @@ export const productDetailsData = {
     imageUrl:
       "/ameublement/tissu-ameublement2.png",
     description:
-      "Tissus décoratifs robustes conçus pour l’ameublement intérieur, alliant esthétique, confort et durabilité. Ils offrent une excellente résistance à l’usure, une bonne tenue dans le temps et un rendu élégant adapté aussi bien aux environnements résidentiels qu’aux espaces professionnels.",
+      "Tissus robustes spécialement sélectionnés pour l’ameublement intérieur, combinant esthétique, confort et performance.Conçus pour résister à une utilisation régulière, ils offrent une excellente tenue à l’usure, une stabilité des couleurs dans le temps et un rendu élégant adapté aux espaces résidentiels comme aux environnements professionnels.",
     applications: ["Canapés", "Chaises", "Hôtellerie & Décoration","Rideaux décoratifs","Coussins"],
     specifications: {
       Résistance: "Abrasion 40,000+ cycles",
@@ -191,7 +191,7 @@ export const productDetailsData = {
     category: "Revêtements",
     imageUrl:
       "/ameublement/similicuire.png",
-    description: "Revêtement en similicuir élégant et durable, conçu pour répondre aux exigences de l’ameublement résidentiel et professionnel. Il offre une excellente résistance à l’usure, un aspect esthétique moderne et un entretien facile, idéal pour un usage quotidien.",
+    description: "Revêtement en simili cuir durable et esthétique, spécialement conçu pour l’ameublement résidentiel et professionnel. Il offre une excellente résistance à l’usure, une bonne tenue dans le temps et un entretien facile, ce qui en fait une solution idéale pour un usage intensif et quotidien.",
     applications: ["Canapés", "Fauteuils", "Sièges de bureau"],
     details:
       "Offre un aspect luxueux avec une résistance accrue à l'usure et aux éclaboussures. Facile à entretenir.",
@@ -202,8 +202,8 @@ export const productDetailsData = {
     category: "Accessoires",
     imageUrl:
       "/ameublement/fourniture.png",
-    description:"Accessoires et composants  destinés à la fabrication, l’assemblage et la réparation de meubles. Conçus pour répondre aux besoins des professionnels,  ils garantissent fiabilité, et qualité de finition dans tous vos projets d’ameublement.",
-    applications: ["Assemblage de meubles", "Réparation et rénovation de meubles", "Fabrication de canapés et fauteuils","nstallation de sangles et ressorts","Travaux de tapisserie","Projets d’aménagement intérieur"],
+    description:"Accessoires et composants dédiés à la fabrication, à l’assemblage et à la réparation de meubles.Conçus pour répondre aux exigences des professionnels, ils garantissent fiabilité, performance et qualité de finition pour tous vos projets d’ameublement.",
+    applications: ["Assemblage de meubles", "Réparation et rénovation de meubles", "Fabrication de canapés et fauteuils","Installation de sangles et ressorts","Travaux de tapisserie","Projets d’aménagement intérieur"],
     details:
       "Comprend agrafes, mousses, pieds de meubles et autres fournitures de qualité professionnelle.",
   },
@@ -226,12 +226,12 @@ export const productDetailsData = {
   },
 
   "Simili_cuir_PVC": {
-    title: "Simili cuir et PVC pour Automobile",
+    title: "Simili cuir & Skai automobiles",
     category: "Textile Automobile",
     imageUrl:
       "/automobile/skai&pvc.png",
     description:
-      "Similicuir et PVC automobiles offrant un rendu esthétique premium avec une excellente durabilité. Faciles à entretenir et résistants à l’usure quotidienne, ces matériaux sont adaptés aux projets nécessitant à la fois élégance, robustesse et facilité d’entretien.",
+      "Revêtements en simili cuir et PVC spécialement développés pour la sellerie et les garnitures automobiles. Conçus pour résister à un usage intensif, ils offrent une excellente durabilité, une résistance à l’abrasion et aux variations de température, tout en garantissant une finition esthétique soignée adaptée aux standards du secteur automobile.",
     applications: ["Sellerie automobile complète", "Habillage de sièges et panneaux de portes", "Garnitures intérieures","Tableaux de bord et accoudoirs"],
     specifications: {
       Sécurité: "Ignifuge",
@@ -250,17 +250,17 @@ export const productDetailsData = {
       "/automobile/garniture.png",
     description:
       "Tissus techniques pour garnitures, légers et faciles à poser, spécialement conçus pour l’habillage intérieur des véhicules. Ils offrent une bonne flexibilité et une finition propre, permettant une installation rapide et un rendu homogène.",
-    applications: ["Pavillon de toit (ciel de toit)", "Garnitures de portes", "Habillage intérieur","Panneaux latéraux","Coffres et zones intérieures"],
+    applications: ["Pavillon de toit (ciel de toit)", "Garnitures de portes", "Habillage intérieur","Panneaux latéraux"],
   },
 
   "tissus-automobiles": {
-    title: "Tissus automobiles ",
+    title: "Tissus Automobiles ",
     category: "Revêtement Technique",
     imageUrl:
       "/automobile/jacquard.png",
     description:
       "Tissus automobiles conçus pour offrir une excellente résistance à l’usure, au frottement et à l’utilisation intensive. Sélectionnés pour leur confort, leur tenue dans le temps et leur stabilité des couleurs, ils conviennent parfaitement aux exigences des professionnels de la sellerie et de la rénovation intérieure automobile.",
-    applications: ["Revêtement de sièges automobiles", "Rénovation intérieure", "Sellerie véhicules particuliers et utilitaires","Sellerie véhicules particuliers et utilitaires"],
+    applications: ["Revêtement de sièges automobiles", "Rénovation intérieure","Sellerie véhicules particuliers et utilitaires"],
     specifications: {
       Résistance: "Anti-rayures",
       Confort: "Toucher soft-touch",

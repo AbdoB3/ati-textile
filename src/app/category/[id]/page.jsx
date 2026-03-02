@@ -20,13 +20,13 @@ export default async function CategoryPage({ params }) {
   ameublement: {
     title: "Ameublement",
     description:
-      "Large sélection de tissus d’ameublement, similicuir et matières dédiées à la décoration intérieure, conçus pour répondre aux exigences des professionnels et des projets résidentiels.",
+      "Large sélection de tissus d’ameublement, simili cuir et matières dédiées à la décoration intérieure, conçus pour répondre aux exigences des professionnels et des projets résidentiels.",
     backgroundImage: "/ameublement.png",
     backgroundImage2: "/ameublement4.png",
 
     heading1: "Tissus décoratifs pour espaces résidentiels et professionnels",
     heading2:
-      "Velours, toiles, similicuir et textiles outdoor conçus pour offrir esthétique, confort et durabilité au quotidien.",
+      "Velours, toiles, simili cuir et textiles outdoor conçus pour offrir esthétique, confort et durabilité au quotidien.",
   },
 
   "tissus-automobiles": {
