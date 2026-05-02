@@ -94,13 +94,13 @@ export default function ContactPage() {
           entreprise: formData.entreprise,
           message: formData.message,
         },
-        "jJcjtNpeKEEOqR9cE" // ← Votre Public Key
+        "jJcjtNpeKEEOqR9cE", // ← Votre Public Key
       );
 
       console.log("Email envoyé avec succès!", result.text);
 
       setSuccessMessage(
-        "Message envoyé avec succès ! Nous vous répondrons rapidement."
+        "Message envoyé avec succès ! Nous vous répondrons rapidement.",
       );
 
       // Réinitialiser le formulaire
@@ -149,7 +149,8 @@ export default function ContactPage() {
             Nous Contacter
           </h1>
           <p className="text-xl text-gray-100">
-            L’équipe de Africa Trade & Industry est à votre disposition pour toute demande d’information ou devis.
+            L’équipe de Africa Trade & Industry est à votre disposition pour
+            toute demande d’information ou devis.
           </p>
         </div>
       </div>
@@ -160,7 +161,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-10">
               {/* Title */}
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
@@ -338,22 +339,22 @@ export default function ContactPage() {
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between items-center py-2 border-b border-gray-700">
                     <span className="text-gray-300">Lundi - Vendredi</span>
-                    <span className="font-semibold">9h00 - 18h00</span>
+                    <span className="font-semibold">9h00 - 19h00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-700">
+                    <span className="text-gray-300">Vendredi</span>
+                    <span className="font-semibold">&nbsp;9h00 - 13h00 <br/> 15h00 - 19h00</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-700">
                     <span className="text-gray-300">Samedi</span>
-                    <span className="font-semibold">9h00 - 13h00</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-300">Dimanche</span>
-                    <span className="font-semibold text-gray-400">Fermé</span>
+                    <span className="font-semibold">9h00 - 14h00</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="lg:sticky lg:top-32 mt-9 lg:mt-21">
+            <div className="lg:sticky lg:top-3 mt-9 lg:mt-24">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
                 {/* Header */}
                 <div className="p-6 bg-gray-900">

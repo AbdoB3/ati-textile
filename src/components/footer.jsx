@@ -14,7 +14,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-100">
-      <div className="mx-auto max-w-7xl px-4 py-12">
+      <div className="mx-auto max-w-7xl px-4 py-16">
         {/* Top Section: Logo & Description */}
         <div className="grid grid-cols-1 gap-8 md:gap-20 md:grid-cols-3 mb-12 ">
           {/* Logo & Company Info */}
@@ -22,29 +22,38 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <Image src="/logo3.png" alt="Logo" width={140} height={50} />
             </div>
-            <p className="text-sm text-slate-400 leading-relaxed">
-             <b className="text-white">Africa Trade & Industry</b> est spécialisée dans la distribution et la fabrication <br/> de solutions textiles pour les secteurs de l’automobile, de la chaussure et de l’ameublement.
+            <p className="text-sm text-slate-400 leading-relaxed max-w-md">
+              Africa Trade & Industry conçoit et distribue des solutions
+              textiles innovantes pour les secteurs de l’automobile, de la
+              chaussure et de l’ameublement.
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Nous contacter</h3>
+            <h3 className="font-semibold text-white text-lg mb-4">
+              Nous contacter
+            </h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-600" />
+                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800">
+                  <Phone className="w-4 h-4 text-blue-500" />
+                </div>
+
                 <a
                   href="tel:+212522986229"
-                  className="text-slate-400 hover:text-white transition"
+                  className="text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300"
                 >
                   +212 (0)5 22 98 62 29
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <MessageCircle className="w-5 h-5 text-blue-600" />
+                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800">
+                  <MessageCircle className="w-4 h-4 text-blue-500" />
+                </div>
                 <a
                   href="https://wa.me/212661716575"
-                  className="text-slate-400 hover:text-white transition"
+                  className="text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -52,17 +61,21 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-600" />
+                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800">
+                  <Mail className="w-4 h-4 text-blue-500" />
+                </div>
                 <a
                   href="mailto:info@yourbrand.com"
-                  className="text-slate-400 hover:text-white transition"
+                  className="text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300"
                 >
                   Contact@atifabrics.com
                 </a>
               </div>
-              
+
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800">
+                  <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                </div>
                 <div>
                   <p className="text-slate-400">191 Bd Bir Anzarane</p>
                   <p className="text-slate-400">20320 Casablanca, Maroc</p>
@@ -70,19 +83,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          {/* Map */}
-          {/* <div className="rounded-lg overflow-hidden h-full min-h-[200px]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.805546229619!2d-7.638570624820067!3d33.58831064270057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd62f0e2ad6b%3A0x4f02d7c5cb5e449a!2s191%20Bd%20Bir%20Anzarane%2C%20Casablanca%2020200%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1730448900000!5m2!1sfr!2sma"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: "200px", borderRadius: "10px" }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div> */}
         </div>
+
+        
 
         {/* Bottom Section: Social & Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -94,28 +97,28 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a
               href="#"
-              className="text-slate-400 hover:text-blue-600 transition"
+              className="text-slate-400 hover:text-white hover:scale-110 transition-transform duration-300"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="text-slate-400 hover:text-blue-600 transition"
+              className="text-slate-400 hover:text-white hover:scale-110 transition-transform duration-300"
               aria-label="Twitter"
             >
               <Twitter className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="text-slate-400 hover:text-blue-600 transition"
+              className="text-slate-400 hover:text-white hover:scale-110 transition-transform duration-300"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="text-slate-400 hover:text-blue-600 transition"
+              className="text-slate-400 hover:text-white hover:scale-110 transition-transform duration-300" 
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
