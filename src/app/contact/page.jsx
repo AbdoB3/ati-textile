@@ -338,7 +338,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between items-center py-2 border-b border-gray-700">
-                    <span className="text-gray-300">Lundi - Vendredi</span>
+                    <span className="text-gray-300">Lundi - Jeudi</span>
                     <span className="font-semibold">9h00 - 19h00</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-700">
