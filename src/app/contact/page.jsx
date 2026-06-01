@@ -251,10 +251,10 @@ export default function ContactPage() {
                         Email
                       </p>
                       <a
-                        href="mailto:contact@atifabrica.com"
+                        href="mailto:contact@atifabrics.com"
                         className="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors break-all"
                       >
-                        contact@atifabrica.com
+                        contact@atifabrics.com
                       </a>
                     </div>
                   </div>
