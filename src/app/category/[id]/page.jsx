@@ -99,7 +99,7 @@ export default async function CategoryPage({ params }) {
         
         {/* Feature with img */}
         <div className="mx-5 md:mx-20">
-          <div className="w-full py-10 ">
+          <div className="w-full ">
             <div className="container mx-auto">
               
               {/* <div className="flex flex-col-reverse lg:flex-row gap-10 items-start">

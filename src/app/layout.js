@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/nav";
+import  { FloatingNavDemo } from "@/components/nav";
 import Footer from "@/components/footer";
 
 const geistSans = Geist({
@@ -26,12 +26,20 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const COLORS = {
+  navy: "#1F2A44",
+  navyDeep: "#141A2C",
+  beige: "#E8DCC8",
+  gold: "#C6A75E",
+  cream: "#F7F3EC",
+};
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} antialiased`}
+         style={{ backgroundColor: COLORS.cream }}
       >
-        <Nav />
+        <FloatingNavDemo />
         <main>{children}</main>
         <Footer />
       </body>
