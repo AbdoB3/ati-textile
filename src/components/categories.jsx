@@ -20,7 +20,7 @@ const categories = [
   {
     id: "tissus-automobiles",
     title: "Automobiles",
-    image: "/Lines/ameublement/ameublement.png",
+    image: "/Lines/automobile/automobiles.png",
     number: "02",
   },
   {
