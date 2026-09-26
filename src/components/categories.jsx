@@ -26,7 +26,7 @@ const categories = [
   {
     id: "matiere-chaussure",
     title: "Chaussure",
-    image: "/lines/chaussure/chaussure.png",
+    image: "/lines/chaussure/plaques-eva.png",
     number: "03",
   },
   {
