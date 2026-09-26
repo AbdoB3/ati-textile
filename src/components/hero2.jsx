@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 
-const logo = "/logo4.png"
+const logo = "/logo5.png"
 
 const COLORS = {
   navy: "#1F2A44",
@@ -16,7 +16,7 @@ const COLORS = {
 const SLIDES = [
   {
     id: 1,
-    image: "https://fabric.axiomthemes.com/wp-content/uploads/2022/08/70_2-1-min.jpg",
+    image: "/slides/MATERIAUX-TEXTILE.png",
     alt: "Échantillons de matières textiles",
     eyebrow: "Matières premières",
     title: "Matériaux Textiles",
@@ -24,11 +24,11 @@ const SLIDES = [
   },
   {
     id: 2,
-    image: "https://edgartextiles.com/wp-content/uploads/2021/10/domestic-fabrics-for-furnitures.jpeg",
-    alt: "Collection de tissus d'ameublement",
-    eyebrow: "Collection maison",
-    title: "Ameublement Premium",
-    description: "Une collection de tissus d'ameublement haut de gamme, pensée pour durer et sublimer chaque intérieur.",
+    image: "/slides/CUIR-SYNTHETIQUE.png",
+    alt: "CUIR SYNTHETIQUE pour ameublement",
+    eyebrow: "Matières & revêtements",
+    title: "Cuir Syntétique",
+    description: "Des revêtements techniques et esthétiques, sélectionnés pour leur résistance, leur souplesse et leur qualité, adaptés aux exigences de l'ameublement et des applications professionnelles.",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const SLIDES = [
   },
 ]
 
-const AUTOPLAY_MS = 4000
+const AUTOPLAY_MS = 3000
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0)
@@ -144,7 +144,7 @@ export default function HeroCarousel() {
           transitionDuration: "700ms",
         }}
       >
-        <Image src={logo} alt="Logo" width={100} height={100} />
+        <Image src={logo} alt="Logo" width={150} height={120} />
 
         
         

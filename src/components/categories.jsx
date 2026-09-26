@@ -14,25 +14,25 @@ const categories = [
   {
     id: "ameublement",
     title: "Ameublement",
-    image: "/ameublement4.png",
+    image: "/Lines/ameublement/ameublement.png",
     number: "01",
   },
   {
     id: "tissus-automobiles",
     title: "Automobiles",
-    image: "/automobile2.png",
+    image: "/Lines/automobile/automobiles.png",
     number: "02",
   },
   {
     id: "matiere-chaussure",
     title: "Chaussure",
-    image: "/chaussure.png",
+    image: "/Lines/chaussure/chaussure.png",
     number: "03",
   },
   {
     id: "autres-textiles",
     title: "Textiles",
-    image: "/textile.png",
+    image: "/Lines/textile/textiles.png",
     number: "04",
   },
 ];
@@ -49,12 +49,6 @@ export default function CategoriesSection() {
       <div className="mx-auto px-6 sm:px-10 md:px-14">
         {/* Section header */}
         <div className="text-center mb-14 md:mb-16">
-          <div
-            className="cat-font-body text-xs sm:text-sm tracking-[0.25em] uppercase mb-4"
-            style={{ color: COLORS.gold }}
-          >
-            Notre catalogue
-          </div>
           <h2
             className="cat-font-display font-light mb-4"
             style={{ color: COLORS.navy, fontSize: "clamp(2rem, 3.5vw, 3rem)" }}
@@ -102,14 +96,14 @@ export default function CategoriesSection() {
             />
 
             {/* Number — top left */}
-            <div className="absolute top-7 left-7">
+            {/* <div className="absolute top-7 left-7">
               <span
                 className="cat-font-display italic text-2xl tracking-wide transition-colors duration-300"
                 style={{ color: "rgba(247,243,236,0.75)" }}
               >
                 {category.number}.
               </span>
-            </div>
+            </div> */}
 
             {/* Title + divider + arrow — bottom */}
             <div className="absolute bottom-0 left-0 right-0 px-7 py-7">

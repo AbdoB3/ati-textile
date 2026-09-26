@@ -2,20 +2,20 @@ export const productsData = {
   "matiere-chaussure": [
     {
       title: "Plaques EVA",
-      imageUrl: "/chaussure/eva.png",
+      imageUrl: "/lines/chaussure/01 Plaques EVA.png",
       href: "/product/plaques-eva",
     },
     {
       title: "Tissus Enduit pour Chaussures",
       imageUrl:
-        "/chaussure/technique.png",
+        "/lines/chaussure/02 Tissus Enduit pour Chaussures.png",
       href: "/product/tissus-technique",
     },
     
     {
       title: "Fournitures pour Chaussure",
       imageUrl:
-        "/chaussure/fourniture.png",
+        "/lines/chaussure/03 Fournitures pour Chaussure.png",
       href: "/product/fourniture-chaussure",
     },
   ],
@@ -24,7 +24,7 @@ export const productsData = {
     {
       title: "Tissus d’Ameublement",
       imageUrl:
-        "/ameublement/tissu-ameublement2.png",
+        "/lines/ameublement/Tissus-Ameublement.png",
 
       href: "/product/tissus-ameublement",
     },
@@ -32,13 +32,13 @@ export const productsData = {
       title: "Simili Cuir",
      
       imageUrl:
-        "/ameublement/similicuire.png",
+        "/lines/ameublement/Simili-Cuir.png",
       href: "/product/simili-cuir",
     },
     {
       title: "Fournitures pour Ameublement",
       imageUrl:
-        "/ameublement/fourniture.png",
+        "/lines/ameublement/Fournitures-Ameublement.png",
 
       href: "/product/fournutures-ameublement",
     },
@@ -48,21 +48,21 @@ export const productsData = {
     {
       title: "Simili cuir & Skai automobiles",
       imageUrl:
-        "/automobile/skai&pvc.png",
+        "/lines/automobile/Simili-cuir-&-Skai-automobiles.png",
       href: "/product/Simili_cuir_PVC",
     },
     {
       title: "Tissus Automobiles",
       // category: "Revêtement Technique",
       imageUrl:
-        "/automobile/jacquard.png",
+        "/lines/automobile/02 Tissus Automobiles.png",
       href: "/product/tissus-automobiles",
     },
     {
       title: "Tissus Garnitures",
       // category: "Revêtement Technique",
       imageUrl:
-        "/automobile/garniture.png",
+        "/lines/automobile/03 Tissus Garnitures.png",
       href: "/product/tissus-garnitures",
     },
     
@@ -72,19 +72,19 @@ export const productsData = {
     {
       title: "Tissus non tissés (non-woven)",
       imageUrl:
-        "/textile/non-woven.png",
+        "/lines/textile/01 Tissus non tissés (non-woven).png",
       href: "/product/tissus-non-woven",
     },
     {
       title: "Tissus imperméables",
       imageUrl:
-        "/textile/impermeables.png",
+        "/lines/textile/02 Tissus imperméables.png",
       href: "/product/tissus-impermeables",
     },
     {
       title: "Tissus multi-usages",
       imageUrl:
-        "/textile/multi-usages.png",
+        "/lines/textile/03 Tissus multi-usages.png",
       href: "/product/tissus-multi-usages",
     },
   ],

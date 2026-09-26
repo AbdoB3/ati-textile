@@ -36,7 +36,7 @@ function Feature() {
             />
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/warehouse1.png"
+                src="/BOTTOM-PICTURE.png"
                 alt="Entrepôt Africa Trade & Industry"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -101,7 +101,7 @@ function Feature() {
             </div>
 
             {/* Material tags — grounded in the categories mentioned above */}
-            <div className="flex flex-wrap gap-2.5 mt-7">
+            {/* <div className="flex flex-wrap gap-2.5 mt-7">
               {materials.map((m) => (
                 <span
                   key={m}
@@ -115,7 +115,7 @@ function Feature() {
                   {m}
                 </span>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

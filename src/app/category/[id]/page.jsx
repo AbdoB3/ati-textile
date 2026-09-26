@@ -70,7 +70,7 @@ export default async function CategoryPage({ params }) {
   }
 
   return (
-    <main className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
+    <main className="min-h-screen bg-linear-to-br ">
       {/* Header with Background Image */}
       <div
         className="relative bg-cover bg-center border-b border-gray-200      "
@@ -95,7 +95,7 @@ export default async function CategoryPage({ params }) {
       </div>
 
       {/* Content */}
-      <div className="w-full bg-background sm:p-4 md:p-6">
+      <div className="w-full bg-{#E8DCC8} sm:p-4 md:p-6">
         
         {/* Feature with img */}
         <div className="mx-5 md:mx-20">

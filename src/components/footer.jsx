@@ -41,7 +41,7 @@ export default function Footer() {
           {/* Logo & Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-5">
-              <Image src="/logo3.png" alt="Logo" width={140} height={50} />
+              <Image src="/logo5.png" alt="Logo" width={150} height={70} />
             </div>
             <p className="foot-font-body text-sm leading-relaxed max-w-md text-[#F7F3EC]/60">
               Africa Trade &amp; Industry conçoit et distribue des solutions textiles innovantes pour les
