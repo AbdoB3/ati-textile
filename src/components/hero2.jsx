@@ -16,7 +16,7 @@ const COLORS = {
 const SLIDES = [
   {
     id: 1,
-    image: "/slides/MATERIAUX-TEXTILE.png",
+    image: "/slides/materiaux-textiles.png",
     alt: "Échantillons de matières textiles",
     eyebrow: "Matières premières",
     title: "Matériaux Textiles",
