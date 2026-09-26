@@ -24,7 +24,7 @@ const SLIDES = [
   },
   {
     id: 2,
-    image: "/slides/CUIR-SYNTHETIQUE.png",
+    image: "/slides/cuir-synthetique.png",
     alt: "CUIR SYNTHETIQUE pour ameublement",
     eyebrow: "Matières & revêtements",
     title: "Cuir Syntétique",
