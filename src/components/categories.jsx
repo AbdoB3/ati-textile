@@ -14,25 +14,25 @@ const categories = [
   {
     id: "ameublement",
     title: "Ameublement",
-    image: "/Lines/ameublement/ameublement.png",
+    image: "/lines/ameublement/ameublement.png",
     number: "01",
   },
   {
     id: "tissus-automobiles",
     title: "Automobiles",
-    image: "/Lines/automobile/automobiles.png",
+    image: "/lines/automobile/automobiles.png",
     number: "02",
   },
   {
     id: "matiere-chaussure",
     title: "Chaussure",
-    image: "/Lines/chaussure/chaussure.png",
+    image: "/lines/chaussure/chaussure.png",
     number: "03",
   },
   {
     id: "autres-textiles",
     title: "Textiles",
-    image: "/Lines/textile/textiles.png",
+    image: "/lines/textile/textiles.png",
     number: "04",
   },
 ];
