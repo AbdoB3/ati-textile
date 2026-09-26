@@ -144,7 +144,7 @@ export default function HeroCarousel() {
           transitionDuration: "700ms",
         }}
       >
-        <Image src={logo} alt="Logo" width={150} height={120} />
+        <Image src={logo} alt="Logo" width={130} height={120} />
 
         
         
