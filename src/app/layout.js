@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import  { FloatingNavDemo } from "@/components/nav";
 import Footer from "@/components/footer";
+import FloatingWhatsApp from "@/components/floating-whatsapp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         <FloatingNavDemo />
         <main>{children}</main>
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

@@ -7,15 +7,13 @@ export const productsData = {
     },
     {
       title: "Tissus Enduit pour Chaussures",
-      imageUrl:
-        "/lines/chaussure/tissus-enduit-pour-chaussures.png",
+      imageUrl: "/lines/chaussure/tissus-enduit-pour-chaussures.png",
       href: "/product/tissus-technique",
     },
-    
+
     {
       title: "Fournitures pour Chaussure",
-      imageUrl:
-        "/lines/chaussure/fournitures-pour-chaussure.png",
+      imageUrl: "/lines/chaussure/fournitures-pour-chaussure.png",
       href: "/product/fourniture-chaussure",
     },
   ],
@@ -23,22 +21,19 @@ export const productsData = {
   ameublement: [
     {
       title: "Tissus d’Ameublement",
-      imageUrl:
-        "/lines/ameublement/tissus-ameublement.png",
+      imageUrl: "/lines/ameublement/tissus-ameublement.png",
 
       href: "/product/tissus-ameublement",
     },
     {
       title: "Simili Cuir",
-     
-      imageUrl:
-        "/lines/ameublement/simili-cuir.png",
+
+      imageUrl: "/lines/ameublement/simili-cuir.png",
       href: "/product/simili-cuir",
     },
     {
       title: "Fournitures pour Ameublement",
-      imageUrl:
-        "/lines/ameublement/fournitures-ameublement.png",
+      imageUrl: "/lines/ameublement/fournitures-ameublement.png",
 
       href: "/product/fournutures-ameublement",
     },
@@ -47,44 +42,36 @@ export const productsData = {
   "tissus-automobiles": [
     {
       title: "Simili cuir & Skai automobiles",
-      imageUrl:
-        "/lines/automobile/simili-cuir-skai.png",
+      imageUrl: "/lines/automobile/simili-cuir-skai.png",
       href: "/product/Simili_cuir_PVC",
     },
     {
       title: "Tissus Automobiles",
       // category: "Revêtement Technique",
-      imageUrl:
-        "/lines/automobile/tissus-automobiles.png",
+      imageUrl: "/lines/automobile/tissus-automobiles.png",
       href: "/product/tissus-automobiles",
     },
     {
       title: "Tissus Garnitures",
       // category: "Revêtement Technique",
-      imageUrl:
-        "/lines/automobile/tissus-garnitures.png",
+      imageUrl: "/lines/automobile/tissus-garnitures.png",
       href: "/product/tissus-garnitures",
     },
-    
-    
   ],
   "autres-textiles": [
     {
       title: "Tissus non tissés (non-woven)",
-      imageUrl:
-        "/lines/textile/tissus-non-tissés.png",
+      imageUrl: "/lines/textile/tissus-non-tissés.png",
       href: "/product/tissus-non-woven",
     },
     {
       title: "Tissus imperméables",
-      imageUrl:
-        "/lines/textile/tissus-imperméables.png",
+      imageUrl: "/lines/textile/tissus-imperméables.png",
       href: "/product/tissus-impermeables",
     },
     {
       title: "Tissus multi-usages",
-      imageUrl:
-        "/lines/textile/tissus-multi-usages.png",
+      imageUrl: "/lines/textile/tissus-multi-usages.png",
       href: "/product/tissus-multi-usages",
     },
   ],
@@ -110,13 +97,17 @@ export const productDetailsData = {
   },
 
   "tissus-technique": {
-    title: "Tissus Techniques pour Chaussures",
+    title: "Tissus Enduit pour Chaussures",
     category: "Textile Technique",
-    imageUrl:
-      "/chaussure/technique.png",
+    imageUrl: "/lines/chaussure/tissus-enduit-pour-chaussures.png",
     description:
       "Tissus techniques spécialement développés pour la fabrication de chaussures, offrant une excellente résistance à l’usure et à l’humidité. Conçus pour allier souplesse, durabilité et qualité de finition, ils facilitent le travail en production tout en garantissant un rendu esthétique conforme aux exigences du secteur.",
-    applications: ["Tiges de chaussures", "Renforts décoratifs", "Chaussures casual et professionnelles","Articles de maroquinerie"],
+    applications: [
+      "Tiges de chaussures",
+      "Renforts décoratifs",
+      "Chaussures casual et professionnelles",
+      "Articles de maroquinerie",
+    ],
     specifications: {
       Composition: "100% Polyester ou Mixte",
       Résistance: "Abrasion & Déchirure",
@@ -130,10 +121,16 @@ export const productDetailsData = {
   "plaques-eva": {
     title: "Plaques EVA",
     category: "Composants",
-    imageUrl: "/chaussure/eva.png",
+    imageUrl: "/lines/chaussure/plaques-eva.png",
+
     description:
       "Plaques en EVA (éthylène-acétate de vinyle) développées pour les applications de chaussure, combinant légèreté, élasticité et excellente absorption des chocs.Faciles à découper, façonner et coller, elles assurent performance mécanique, stabilité et confort d’utilisation. Idéales pour la fabrication de semelles et de composants techniques de chaussure.",
-    applications: ["Sandales et chaussures légères", "Semelles intermédiaires et extérieures", "Sandales et chaussures légères","Amorti et confort"],
+    applications: [
+      "Sandales et chaussures légères",
+      "Semelles intermédiaires et extérieures",
+      "Sandales et chaussures légères",
+      "Amorti et confort",
+    ],
     specifications: {
       Densité: "Sur mesure",
       Légèreté: "Très élevée",
@@ -147,8 +144,8 @@ export const productDetailsData = {
   "fourniture-chaussure": {
     title: "Fournitures Chaussure",
     category: "Fournitures",
-    imageUrl:
-      "/chaussure/fourniture.png",
+    imageUrl: "/lines/chaussure/fournitures-pour-chaussure.png",
+
     description:
       "Large gamme de fournitures et accessoires destinés à la fabrication et à l’assemblage de chaussures, sélectionnés pour garantir fiabilité, performance et qualité de finition dans les processus de production.",
     applications: [
@@ -156,7 +153,7 @@ export const productDetailsData = {
       "Réparation et entretien",
       "Production industrielle",
       "Renforts et finitions",
-      "Fabrication artisanale et industrielle"
+      "Fabrication artisanale et industrielle",
     ],
     specifications: {
       Type: "Colle PU, Néoprène",
@@ -171,11 +168,16 @@ export const productDetailsData = {
   "tissus-ameublement": {
     title: "Tissus d’Ameublement ",
     category: "Textiles",
-    imageUrl:
-      "/ameublement/tissu-ameublement2.png",
+    imageUrl: "/lines/ameublement/tissus-ameublement.png",
     description:
       "Tissus robustes spécialement sélectionnés pour l’ameublement intérieur, combinant esthétique, confort et performance.Conçus pour résister à une utilisation régulière, ils offrent une excellente tenue à l’usure, une stabilité des couleurs dans le temps et un rendu élégant adapté aux espaces résidentiels comme aux environnements professionnels.",
-    applications: ["Canapés", "Chaises", "Hôtellerie & Décoration","Rideaux décoratifs","Coussins"],
+    applications: [
+      "Canapés",
+      "Chaises",
+      "Hôtellerie & Décoration",
+      "Rideaux décoratifs",
+      "Coussins",
+    ],
     specifications: {
       Résistance: "Abrasion 40,000+ cycles",
       Nettoyage: "Facile",
@@ -189,9 +191,9 @@ export const productDetailsData = {
   "simili-cuir": {
     title: "Simili Cuir",
     category: "Revêtements",
-    imageUrl:
-      "/ameublement/similicuire.png",
-    description: "Revêtement en simili cuir durable et esthétique, spécialement conçu pour l’ameublement résidentiel et professionnel. Il offre une excellente résistance à l’usure, une bonne tenue dans le temps et un entretien facile, ce qui en fait une solution idéale pour un usage intensif et quotidien.",
+    imageUrl: "/lines/ameublement/simili-cuir.png",
+    description:
+      "Revêtement en simili cuir durable et esthétique, spécialement conçu pour l’ameublement résidentiel et professionnel. Il offre une excellente résistance à l’usure, une bonne tenue dans le temps et un entretien facile, ce qui en fait une solution idéale pour un usage intensif et quotidien.",
     applications: ["Canapés", "Fauteuils", "Sièges de bureau"],
     details:
       "Offre un aspect luxueux avec une résistance accrue à l'usure et aux éclaboussures. Facile à entretenir.",
@@ -200,10 +202,17 @@ export const productDetailsData = {
   "fournutures-ameublement": {
     title: "Fournitures pour Ameublement",
     category: "Accessoires",
-    imageUrl:
-      "/ameublement/fourniture.png",
-    description:"Accessoires et composants dédiés à la fabrication, à l’assemblage et à la réparation de meubles.Conçus pour répondre aux exigences des professionnels, ils garantissent fiabilité, performance et qualité de finition pour tous vos projets d’ameublement.",
-    applications: ["Assemblage de meubles", "Réparation et rénovation de meubles", "Fabrication de canapés et fauteuils","Installation de sangles et ressorts","Travaux de tapisserie","Projets d’aménagement intérieur"],
+    imageUrl: "/lines/ameublement/fournitures-ameublement.png",
+    description:
+      "Accessoires et composants dédiés à la fabrication, à l’assemblage et à la réparation de meubles.Conçus pour répondre aux exigences des professionnels, ils garantissent fiabilité, performance et qualité de finition pour tous vos projets d’ameublement.",
+    applications: [
+      "Assemblage de meubles",
+      "Réparation et rénovation de meubles",
+      "Fabrication de canapés et fauteuils",
+      "Installation de sangles et ressorts",
+      "Travaux de tapisserie",
+      "Projets d’aménagement intérieur",
+    ],
     details:
       "Comprend agrafes, mousses, pieds de meubles et autres fournitures de qualité professionnelle.",
   },
@@ -225,14 +234,19 @@ export const productDetailsData = {
       "Conçues pour maintien durable et confort optimal, adaptées aux environnements d’usage intensif.",
   },
 
-  "Simili_cuir_PVC": {
+  Simili_cuir_PVC: {
     title: "Simili cuir & Skai automobiles",
     category: "Textile Automobile",
-    imageUrl:
-      "/automobile/skai&pvc.png",
+    imageUrl: "/lines/automobile/simili-cuir-skai.png",
+
     description:
       "Revêtements en simili cuir et PVC spécialement développés pour la sellerie et les garnitures automobiles. Conçus pour résister à un usage intensif, ils offrent une excellente durabilité, une résistance à l’abrasion et aux variations de température, tout en garantissant une finition esthétique soignée adaptée aux standards du secteur automobile.",
-    applications: ["Sellerie automobile complète", "Habillage de sièges et panneaux de portes", "Garnitures intérieures","Tableaux de bord et accoudoirs"],
+    applications: [
+      "Sellerie automobile complète",
+      "Habillage de sièges et panneaux de portes",
+      "Garnitures intérieures",
+      "Tableaux de bord et accoudoirs",
+    ],
     specifications: {
       Sécurité: "Ignifuge",
       Résistance: "Anti-décoloration",
@@ -246,21 +260,30 @@ export const productDetailsData = {
   "tissus-garnitures": {
     title: "Tissus Garnitures",
     category: "Textile Automobile",
-    imageUrl:
-      "/automobile/garniture.png",
+    imageUrl: "/lines/automobile/tissus-garnitures.png",
+
     description:
       "Tissus techniques pour garnitures, légers et faciles à poser, spécialement conçus pour l’habillage intérieur des véhicules. Ils offrent une bonne flexibilité et une finition propre, permettant une installation rapide et un rendu homogène.",
-    applications: ["Pavillon de toit (ciel de toit)", "Garnitures de portes", "Habillage intérieur","Panneaux latéraux"],
+    applications: [
+      "Pavillon de toit (ciel de toit)",
+      "Garnitures de portes",
+      "Habillage intérieur",
+      "Panneaux latéraux",
+    ],
   },
 
   "tissus-automobiles": {
     title: "Tissus Automobiles ",
     category: "Revêtement Technique",
-    imageUrl:
-      "/automobile/jacquard.png",
+    imageUrl: "/lines/automobile/tissus-automobiles.png",
+
     description:
       "Tissus automobiles conçus pour offrir une excellente résistance à l’usure, au frottement et à l’utilisation intensive. Sélectionnés pour leur confort, leur tenue dans le temps et leur stabilité des couleurs, ils conviennent parfaitement aux exigences des professionnels de la sellerie et de la rénovation intérieure automobile.",
-    applications: ["Revêtement de sièges automobiles", "Rénovation intérieure","Sellerie véhicules particuliers et utilitaires"],
+    applications: [
+      "Revêtement de sièges automobiles",
+      "Rénovation intérieure",
+      "Sellerie véhicules particuliers et utilitaires",
+    ],
     specifications: {
       Résistance: "Anti-rayures",
       Confort: "Toucher soft-touch",
@@ -291,11 +314,16 @@ export const productDetailsData = {
   "tissus-non-woven": {
     title: "Tissus non tissés (non-woven)",
     category: "Durabilité",
-    imageUrl:
-      "/textile/non-woven.png",
+    imageUrl: "/lines/textile/tissus-non-tissés.png",
+
     description:
       "Des tissus non tissés légers, économiques et polyvalents, conçus pour répondre aux besoins des secteurs industriels. Grâce à leur structure spécifique, ils offrent une bonne résistance, une excellente adaptabilité et une mise en œuvre facile.",
-    applications: ["Isolation", "Sous-couches", "Emballage","Industrie automobile"],
+    applications: [
+      "Isolation",
+      "Sous-couches",
+      "Emballage",
+      "Industrie automobile",
+    ],
     specifications: {
       Résistance: "Anti-déchirure",
       Durabilité: "Anti-abrasion",
@@ -308,29 +336,38 @@ export const productDetailsData = {
   "tissus-impermeables": {
     title: "Tissus imperméables",
     category: "Textile Industriel",
-    imageUrl:
-      "/textile/impermeables.png",
+    imageUrl: "/lines/textile/tissus-imperméables.png",
+
     description:
       "Nos tissus imperméables sont développés pour garantir une protection optimale contre l’eau, l’humidité et les conditions extérieures exigeantes. Robustes et durables, ils sont parfaitement adaptés aux environnements extérieurs et aux applications nécessitant résistance et longévité.",
-    applications: ["Outdoor", "Protection", "Housses","Bâches","Ameublement extérieur"],
+    applications: [
+      "Outdoor",
+      "Protection",
+      "Housses",
+      "Bâches",
+      "Ameublement extérieur",
+    ],
     specifications: {
       Résistance: "Chimique & Mécanique",
       Température: "Haute résistance thermique",
     },
-    
   },
   "tissus-multi-usages": {
     title: "Tissus multi-usages",
     category: "Textile Industriel",
-    imageUrl:
-      "/textile/multi-usages.png",
+    imageUrl: "/lines/textile/tissus-multi-usages.png",
     description:
       "Les tissus multi-usage se distinguent par leur grande polyvalence et leur résistance. Conçus pour s’adapter à différents secteurs d’activité, ils combinent flexibilité, durabilité et facilité de transformation, répondant ainsi aux exigences variées des professionnels.",
-    applications: ["Artisanat", "Protection", "Industrie","Décoration","Production"],
+    applications: [
+      "Artisanat",
+      "Protection",
+      "Industrie",
+      "Décoration",
+      "Production",
+    ],
     specifications: {
       Résistance: "Chimique & Mécanique",
       Température: "Haute résistance thermique",
     },
-    
   },
 };
