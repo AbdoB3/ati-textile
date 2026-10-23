@@ -20,10 +20,10 @@ const COLORS = {
 };
 
 const socials = [
-  { Icon: Facebook, label: "Facebook" },
-  { Icon: Twitter, label: "Twitter" },
-  { Icon: Instagram, label: "Instagram" },
-  { Icon: Linkedin, label: "LinkedIn" },
+  { Icon: Facebook, label: "Facebook", href: "#" },
+  // { Icon: Twitter, label: "Twitter", href: "https://twitter.com/atifabrics" },
+  { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/africatradeindustry" },
+  // { Icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/atifabrics" },
 ];
 
 export default function Footer() {
@@ -120,10 +120,10 @@ export default function Footer() {
 
           {/* Social Media Icons */}
           <div className="flex items-center gap-4">
-            {socials.map(({ Icon, label }) => (
+            {socials.map(({ Icon, label, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href}
                 aria-label={label}
                 className="text-[#F7F3EC]/55 hover:text-[#C6A75E] transition-transform duration-300 hover:scale-110"
               >

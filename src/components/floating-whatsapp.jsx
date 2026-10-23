@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function FloatingWhatsApp() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 max-sm:bottom-4 max-sm:right-4">
+    <div className="fixed bottom-24 right-6 z-50 flex flex-col items-end gap-2 max-sm:bottom-4 max-sm:right-4">
       <span className="rounded-full bg-[#F7F3EC] px-4 py-1.5 text-xs font-medium text-[#51483D] shadow-md">
         Une question ?
       </span>
